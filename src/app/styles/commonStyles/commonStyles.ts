@@ -2,8 +2,14 @@ import { css } from "@emotion/react";
 import { showUp2, widthHeightZeroTo40 } from "./keyframes";
 
 export const commonColors = {
-  representative: "#a2ffe3",
+  rep: "#0cd5a4",
 };
+
+export const colorRep = [
+  css`
+    color: ${commonColors.rep};
+  `,
+];
 
 export const flexCenterX2 = css`
   display: flex;
