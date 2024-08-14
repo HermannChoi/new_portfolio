@@ -5,6 +5,7 @@ import Image from "next/image";
 import github from "@/app/assets/svg/github.svg";
 import velog from "@/app/assets/svg/velog.svg";
 import notion from "@/app/assets/svg/notion.svg";
+import profile from "@/app/assets/profile/profile.jpg";
 
 import { colorRep } from "../styles/commonStyles/commonStyles";
 import {
@@ -14,8 +15,11 @@ import {
 } from "../styles/mainStyles/firstSecStyles";
 import Link from "next/link";
 import { blogs } from "../constants/blogs";
+import { useState } from "react";
 
 const FirstSection = () => {
+  const [isClicked, setIsClicked] = useState<boolean>(false);
+
   const images = [github, velog, notion];
 
   return (
@@ -62,7 +66,16 @@ const FirstSection = () => {
           </button>
         </div>
       </div>
-      <div css={firstSectionStyles.right}>image</div>
+      <button
+        onClick={() => setIsClicked(!isClicked)}
+        css={firstSectionStyles.right(isClicked)}
+      >
+        <Image
+          src={profile}
+          alt="profile"
+          css={firstSectionStyles.profileImage}
+        />
+      </button>
     </section>
   );
 };

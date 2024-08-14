@@ -122,27 +122,15 @@ export const leftToRight = keyframes`
 100% {left: 80%; opacity: 0;}
 `;
 
-export const floating = keyframes`
-from {transform: translateY(0px) scale(1);}
-to {transform: translateY(10px) scale(0.9);}
-`;
-
-export const widthHeightZeroTo40 = keyframes`
-from {width: 0; height: 0;}
-to {width: 40px; height: 40px; overflow: visible;}
-`;
-
-export const heightZeroTo200 = keyframes`
-from {height: 0;}
-to {height: 200px;}
-`;
-
-export const height200ToZero = keyframes`
-from {height: 200px;}
-to {height: 0;}
-`;
-
 export const roate360 = keyframes`
 from {transform: rotate(0deg);}
 to {transform: rotate(360deg);}
+`;
+
+export const emojiAni = keyframes`
+30% {transform: scale(1.2)}
+40% {transform: scale(1.2)}
+55% {transform: scale(1.2) rotate(30deg)}
+70% {transform: scale(1.2) rotate(-30deg)}
+100% {transform: scale(1)}
 `;

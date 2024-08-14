@@ -13,7 +13,8 @@ export const headerStyles = {
       top: 0;
       width: 100%;
       height: 60px;
-      background-color: ${commonColors.rep}d9;
+      background-color: #0cae86;
+      z-index: 100;
     `,
   ],
   progress_container: [
@@ -26,7 +27,6 @@ export const headerStyles = {
       border-radius: 5px;
       background-color: gray;
       overflow: hidden;
-      z-index: 101;
     `,
   ],
   progress_bar: (progress: number) => {

@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { showUp2, widthHeightZeroTo40 } from "./keyframes";
+import { showUp2 } from "./keyframes";
 
 export const commonColors = {
   rep: "#0cd5a4",
@@ -63,14 +63,6 @@ export const delayShowUpAni = (delay: number) => {
     css`
       opacity: 0;
       animation: ${showUp2} 0.5s ${delay}s forwards;
-    `,
-  ];
-};
-
-export const delayShowUpAni2 = (delay: number) => {
-  return [
-    css`
-      animation: ${widthHeightZeroTo40} 0.5s ${delay}s forwards;
     `,
   ];
 };

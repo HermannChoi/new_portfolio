@@ -1,5 +1,10 @@
 import { css } from "@emotion/react";
-import { commonColors, flexCenterX2 } from "../commonStyles/commonStyles";
+import {
+  commonColors,
+  flexCenterX2,
+  widthHeightFull,
+} from "../commonStyles/commonStyles";
+import { emojiAni } from "../commonStyles/keyframes";
 
 export const firstSectionStyles = {
   layout: [
@@ -21,16 +26,32 @@ export const firstSectionStyles = {
       justify-content: center;
     `,
   ],
-  right: [
-    css`
-      flex: 1;
-      border: 1px solid white;
-      border-radius: 10px;
-    `,
-  ],
   h1: [
     css`
       font-size: 3rem;
+    `,
+  ],
+  right: (isClicked: boolean) => {
+    return [
+      css`
+        flex: 1;
+        min-height: 400px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #80808080;
+        ${!isClicked &&
+        `filter: blur(10px); opacity: 0.5; &:hover { opacity: 0.7;}`}
+        transition: 0.2s;
+        overflow: hidden;
+      `,
+    ];
+  },
+  profileImage: [
+    widthHeightFull,
+    css`
+      user-select: none;
+      object-fit: cover;
+      user-select: none;
     `,
   ],
 };
@@ -50,6 +71,7 @@ export const FSmessageStyles = {
     css`
       font-size: 1.5rem;
       margin-right: 10px;
+      animation: ${emojiAni} 3s infinite;
     `,
   ],
   message: [
@@ -64,6 +86,7 @@ export const personalLinks = {
   container: [
     css`
       display: flex;
+      flex-wrap: wrap;
       gap: 10px;
       margin-top: 10px;
     `,
