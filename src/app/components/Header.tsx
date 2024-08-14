@@ -3,6 +3,8 @@
 
 import React, { useEffect, useState } from "react";
 import { headerStyles } from "../styles/headerStyles/headerStyles";
+import Image from "next/image";
+import cd from "@/app/assets/svg/cd.svg";
 
 const Header = () => {
   const [scrollProgress, setScrollProgress] = useState<number>(0);
@@ -20,9 +22,16 @@ const Header = () => {
 
   return (
     <header css={headerStyles.header}>
-      <nav></nav>
       <div css={headerStyles.progress_container}>
         <div css={headerStyles.progress_bar(scrollProgress)}></div>
+      </div>
+      <div css={headerStyles.inner}>
+        <Image src={cd} alt="CD" css={headerStyles.cd} />
+        <button css={headerStyles.menu}>
+          <div css={headerStyles.menubar} />
+          <div css={headerStyles.menubar} />
+          <div css={headerStyles.menubar} />
+        </button>
       </div>
     </header>
   );

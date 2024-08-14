@@ -141,3 +141,8 @@ export const height200ToZero = keyframes`
 from {height: 200px;}
 to {height: 0;}
 `;
+
+export const roate360 = keyframes`
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}
+`;
