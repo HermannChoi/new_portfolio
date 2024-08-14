@@ -52,7 +52,11 @@ const FirstSection = () => {
             onClick={() =>
               (window.location.href = `mailto: hiyunseok347@gmail.com`)
             }
-            css={[personalLinks.layout, personalLinks.name]}
+            css={[
+              personalLinks.layout,
+              personalLinks.name,
+              `min-width: 115px;`,
+            ]}
           >
             Contact Me
           </button>

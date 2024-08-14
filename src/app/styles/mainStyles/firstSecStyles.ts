@@ -7,6 +7,10 @@ export const firstSectionStyles = {
       display: flex;
       gap: 20px;
       height: 70vh;
+
+      @media (max-width: 900px) {
+        flex-direction: column;
+      }
     `,
   ],
   left: [
@@ -61,6 +65,7 @@ export const personalLinks = {
     css`
       display: flex;
       gap: 10px;
+      margin-top: 10px;
     `,
   ],
   layout: [
@@ -84,8 +89,7 @@ export const personalLinks = {
   ],
   image: [
     css`
-      width: 30px;
-      height: 30px;
+      width: 25px;
     `,
   ],
   name: [

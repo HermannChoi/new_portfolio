@@ -2,14 +2,15 @@
 /** @jsxImportSource @emotion/react */
 
 import { css } from "@emotion/react";
-import { colorRep } from "./styles/commonStyles/commonStyles";
 import { mainStyles } from "./styles/mainStyles/mainStyles";
 import FirstSection from "./components/FirstSection";
 import Header from "./components/Header";
+import Background from "./components/Background";
 
 export default function Home() {
   return (
     <>
+      <Background />
       <Header />
       <main css={mainStyles.main}>
         <FirstSection />
