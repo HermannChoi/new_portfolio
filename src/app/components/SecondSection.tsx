@@ -10,10 +10,10 @@ const SecondSection = () => {
     <section css={secondSectionStyles.layout}>
       <h2 css={secondSectionStyles.title}>Tech Stacks</h2>
       <div css={secondSectionStyles.main}>
-        {techStacks.map((tech, i) => {
-          return (
-            <div key={i} css={secondSectionStyles.outerContainer}>
-              <div css={secondSectionStyles.innerContainer}>
+        <div css={secondSectionStyles.outerContainer}>
+          {techStacks.map((tech, i) => {
+            return (
+              <div key={i} css={secondSectionStyles.innerContainer}>
                 <p css={secondSectionStyles.techTitle}>{tech.title}</p>
                 <div css={secondSectionStyles.techContentLayout}>
                   {tech.contents.map((content, index) => {
@@ -38,9 +38,9 @@ const SecondSection = () => {
                   })}
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   );

@@ -34,7 +34,8 @@ export const firstSectionStyles = {
     css`
       position: relative;
       flex: 1;
-      min-height: 400px;
+      min-height: 300px;
+      max-height: 600px;
     `,
   ],
   profileBtn: (isClicked: boolean) => {
@@ -57,6 +58,8 @@ export const firstSectionStyles = {
   profileImage: [
     widthHeightFull,
     css`
+      min-height: 300px;
+      max-height: 600px;
       object-fit: cover;
       user-select: none;
     `,

@@ -21,6 +21,7 @@ export const secondSectionStyles = {
   main: [
     flexColumnCenter,
     css`
+      width: 100%;
       @media (max-width: 1000px) {
         row-gap: 20px;
       }
@@ -29,12 +30,13 @@ export const secondSectionStyles = {
   outerContainer: [
     css`
       display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      padding: 0 5%;
+      flex-direction: column;
+      width: fit-content;
+      transition: 0.2s;
 
       @media (max-width: 1000px) {
-        justify-content: center;
+        row-gap: 20px;
+        align-items: center;
       }
     `,
   ],
@@ -42,8 +44,16 @@ export const secondSectionStyles = {
     css`
       display: flex;
       align-items: center;
-      gap: 20px;
+      width: 100%;
       min-height: 60px;
+      padding: 5px 20px;
+      border-radius: 0.5rem;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.03, 1);
+        background-color: ${commonColors.rep}30;
+      }
 
       @media (max-width: 1000px) {
         flex-direction: column;
@@ -92,7 +102,6 @@ export const secondSectionStyles = {
   techContent: [
     css`
       font-size: 2rem;
-      font-weight: 500;
     `,
   ],
 };
