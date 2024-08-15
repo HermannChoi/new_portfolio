@@ -11,7 +11,6 @@ export const firstSectionStyles = {
     css`
       display: flex;
       gap: 20px;
-      height: 70vh;
 
       @media (max-width: 900px) {
         flex-direction: column;
