@@ -1,10 +1,6 @@
 import { css } from "@emotion/react";
-import {
-  commonColors,
-  flexCenterX2,
-  flexColumnCenterX2,
-} from "../commonStyles/commonStyles";
-import { roate360 } from "../commonStyles/keyframes";
+import { flexColumnCenterX2 } from "../commonStyles/commonStyles";
+import { rotate360 } from "../commonStyles/keyframes";
 
 export const headerStyles = {
   header: [
@@ -56,29 +52,62 @@ export const headerStyles = {
     css`
       width: 35px;
       height: 35px;
-      animation: ${roate360} 2s infinite linear;
+      animation: ${rotate360} 2s infinite linear;
     `,
   ],
   menu: [
     flexColumnCenterX2,
     css`
       row-gap: 5px;
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
+      padding: 0 5px;
       border: none;
+      border-radius: 3px;
       background-color: transparent;
       transition: 0.2s;
       &:hover {
-        transform: scale(1.1, 1);
+        transform: scale(1.1);
+        background-color: #00000030;
       }
     `,
   ],
   menubar: [
     css`
-      width: 80%;
+      width: 35px;
       height: 4px;
       border-radius: 3px;
       background-color: white;
+      transition: 0.3s;
     `,
   ],
+  menubar1: (isClicked: boolean) => {
+    return [
+      headerStyles.menubar,
+      css`
+        position: relative;
+        ${isClicked && `width: 0;`}
+        &:before {
+          ${headerStyles.menubar}
+          content: "";
+          position: absolute;
+          top: -10px;
+          left: 0;
+          display: block;
+          transform: rotate(${isClicked ? `-135` : `0`}deg)
+            translate(${isClicked ? `4px, -18px` : `0, 0`});
+        }
+        &:after {
+          ${headerStyles.menubar}
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 0;
+          display: block;
+          transform: rotate(${isClicked ? `135` : `0`}deg)
+            translate(${isClicked ? `5px, 19px` : `0, 0`});
+        }
+      `,
+    ];
+  },
 };

@@ -122,9 +122,37 @@ export const leftToRight = keyframes`
 100% {left: 80%; opacity: 0;}
 `;
 
-export const roate360 = keyframes`
-from {transform: rotate(0deg);}
-to {transform: rotate(360deg);}
+export const rotate360 = keyframes`
+  0% { 
+    transform: rotate(0deg) scale(1);
+  }
+  40% { 
+    transform: rotate(144deg) scale(1);
+  }
+  
+  /* 첫 번째 진동 */
+  43% { 
+    transform: rotate(154.8deg) scale(1.05);
+  }
+  45% { 
+    transform: rotate(162deg) scale(1.1);
+  }
+  50% { 
+    transform: rotate(180deg) scale(1);
+  }
+  /* 두 번째 진동 */
+  73% { 
+    transform: rotate(262.8deg) scale(1.05);
+  }
+  75% { 
+    transform: rotate(270deg) scale(1.1);
+  }
+  80% { 
+    transform: rotate(288deg) scale(1);
+  }
+  100% { 
+    transform: rotate(360deg) scale(1);
+  }
 `;
 
 export const emojiAni = keyframes`
