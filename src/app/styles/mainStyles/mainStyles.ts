@@ -5,7 +5,7 @@ export const mainStyles = {
     css`
       display: flex;
       flex-direction: column;
-      row-gap: 50vh;
+      row-gap: 30vh;
       width: 100%;
       padding: 50px;
     `,

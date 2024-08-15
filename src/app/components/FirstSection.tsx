@@ -66,16 +66,18 @@ const FirstSection = () => {
           </button>
         </div>
       </div>
-      <button
-        onClick={() => setIsClicked(!isClicked)}
-        css={firstSectionStyles.right(isClicked)}
-      >
-        <Image
-          src={profile}
-          alt="profile"
-          css={firstSectionStyles.profileImage}
-        />
-      </button>
+      <div css={firstSectionStyles.right}>
+        <button
+          onClick={() => setIsClicked(!isClicked)}
+          css={firstSectionStyles.profileBtn(isClicked)}
+        >
+          <Image
+            src={profile}
+            alt="profile"
+            css={firstSectionStyles.profileImage}
+          />
+        </button>
+      </div>
     </section>
   );
 };

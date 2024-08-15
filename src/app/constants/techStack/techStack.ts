@@ -1,7 +1,7 @@
 export const techStacks = [
   {
     title: "Language",
-    contents: ["HTML/CSS", "JavaScript", "TypeScript"],
+    contents: ["TypeScript", "JavaScript"],
   },
   {
     title: "Framework",

@@ -38,7 +38,8 @@ export const backgroundStyles = {
           : `border: 1px solid ${commonColors.rep}90;`}
         border-radius: 10px;
         color: ${RO === i ? `#808080` : `#80808080`};
-        font-size: 6rem;
+        font-size: 8rem;
+        transform: translateY(${RO === i ? `0` : `-10px`});
         transition: all 0.5s;
       `,
     ];

@@ -6,6 +6,7 @@ import { mainStyles } from "./styles/mainStyles/mainStyles";
 import FirstSection from "./components/FirstSection";
 import Header from "./components/Header";
 import Background from "./components/Background";
+import SecondSection from "./components/SecondSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main css={mainStyles.main}>
         <FirstSection />
+        <SecondSection />
         <section
           css={css`
             height: 70vh;

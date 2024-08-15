@@ -31,25 +31,33 @@ export const firstSectionStyles = {
       font-size: 3rem;
     `,
   ],
-  right: (isClicked: boolean) => {
+  right: [
+    css`
+      position: relative;
+      flex: 1;
+      min-height: 400px;
+    `,
+  ],
+  profileBtn: (isClicked: boolean) => {
     return [
+      widthHeightFull,
       css`
-        flex: 1;
-        min-height: 400px;
         border: none;
-        border-radius: 10px;
-        box-shadow: 0 0 20px #80808080;
-        ${!isClicked &&
-        `filter: blur(10px); opacity: 0.5; &:hover { opacity: 0.7;}`}
+        border-radius: 30px;
+        background-color: transparent;
         transition: 0.2s;
         overflow: hidden;
+        &:hover {
+          box-shadow: 0 0 20px #80808080;
+        }
+        ${!isClicked &&
+        `filter: blur(10px); opacity: 0.5; &:hover { opacity: 0.7;}`}
       `,
     ];
   },
   profileImage: [
     widthHeightFull,
     css`
-      user-select: none;
       object-fit: cover;
       user-select: none;
     `,
@@ -113,6 +121,7 @@ export const personalLinks = {
   image: [
     css`
       width: 25px;
+      height: 25px;
     `,
   ],
   name: [

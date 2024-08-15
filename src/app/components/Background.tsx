@@ -19,15 +19,15 @@ const Background = () => {
     setInterval(() => {
       const randomNumber = Math.floor(Math.random() * 10);
       setRandomOrder1(randomNumber);
-    }, 3100);
+    }, 1100);
     setInterval(() => {
       const randomNumber = Math.floor(Math.random() * 10);
       setRandomOrder2(randomNumber);
-    }, 3300);
+    }, 1300);
     setInterval(() => {
       const randomNumber = Math.floor(Math.random() * 10);
       setRandomOrder3(randomNumber);
-    }, 3800);
+    }, 1800);
   }, []);
 
   return (
