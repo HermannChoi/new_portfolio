@@ -1,5 +1,4 @@
 import Github from "@/app/assets/svg/github.svg";
-import Notion from "@/app/assets/svg/notionW.svg";
 import { FirstInfoType } from "@/app/types/projectComponentTypes/firstInfo";
 import { FooterType } from "@/app/types/projectComponentTypes/footer";
 import image1 from "@/app/assets/projectImages/budgetCalculator/image1.png";
