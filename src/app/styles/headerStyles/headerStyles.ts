@@ -1,18 +1,21 @@
 import { css } from "@emotion/react";
 import { commonColors, flexColumnCenterX2 } from "../commonStyles/commonStyles";
-import { rotate360 } from "../commonStyles/keyframes";
+import { rotate360, showUp } from "../commonStyles/keyframes";
 
 export const headerStyles = {
-  header: [
-    css`
-      position: sticky;
-      top: 0;
-      width: 100%;
-      height: 80px;
-      background-color: ${commonColors.rep};
-      z-index: 100;
-    `,
-  ],
+  header: (isClicked: boolean) => {
+    return [
+      css`
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: ${isClicked ? `100vh` : `80px`};
+        background-color: ${commonColors.rep};
+        transition: 1s;
+        z-index: 100;
+      `,
+    ];
+  },
   progress_container: [
     css`
       position: absolute;
@@ -53,6 +56,12 @@ export const headerStyles = {
       width: 40px;
       height: 40px;
       animation: ${rotate360} 2s infinite linear;
+    `,
+  ],
+  contentsContainer: [
+    css`
+      font-size: 6rem;
+      animation: ${showUp} 2s;
     `,
   ],
   menu: [

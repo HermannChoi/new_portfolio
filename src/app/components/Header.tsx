@@ -22,12 +22,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header css={headerStyles.header}>
+    <header css={headerStyles.header(isClicked)}>
       <div css={headerStyles.progress_container}>
         <div css={headerStyles.progress_bar(scrollProgress)}></div>
       </div>
       <div css={headerStyles.inner}>
         <Image src={cd} alt="CD" css={headerStyles.cd} />
+        {isClicked && (
+          <div css={headerStyles.contentsContainer}>Coming soon</div>
+        )}
         <button
           onClick={() => setIsClicked(!isClicked)}
           css={headerStyles.menu}
