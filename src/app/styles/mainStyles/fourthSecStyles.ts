@@ -66,6 +66,7 @@ export const fourthSectionStyles = {
       width: 100%;
       height: auto;
       border: 1px solid gray;
+      border-radius: 5px;
       object-fit: cover;
     `,
   ],
@@ -98,11 +99,26 @@ export const fourthSectionStyles = {
       }
     `,
   ],
-  title: [
-    css`
-      font-size: 2rem;
-    `,
-  ],
+  title: (whichHovered: number | null, i: number) => {
+    return [
+      css`
+        position: relative;
+        width: fit-content;
+        font-size: 2rem;
+        ${whichHovered === i && `color: ${commonColors.color};`}
+
+        &:after {
+          content: "↗";
+          position: absolute;
+          bottom: 5px;
+          right: -15px;
+          font-size: 1rem;
+          transition: 0.3s;
+          ${whichHovered === i && `transform: translate(10px, -10px);`}
+        }
+      `,
+    ];
+  },
   description: [
     css`
       font-size: 1.2rem;

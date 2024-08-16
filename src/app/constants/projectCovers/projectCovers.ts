@@ -7,6 +7,7 @@ import image4 from "@/app/assets/projectImages/githubFinder/image1.png";
 export const projectCovers: ProjectCover[] = [
   {
     src: image1,
+    href: `https://my-portfolio-snowy-tau.vercel.app/`,
     title: "My Portfolio v 1.0",
     period: "2024.05.02 ~ 2024.05.12 (11D)",
     techStack: ["Next.js", "TypeScript", "Emotion", "GitHub Actions"],
@@ -16,6 +17,7 @@ export const projectCovers: ProjectCover[] = [
   },
   {
     src: image2,
+    href: `https://palette.run/`,
     title: "Palette*",
     period: "2024.03.04 ~ 2024.04.22 (49D)",
     techStack: [
@@ -32,6 +34,7 @@ export const projectCovers: ProjectCover[] = [
   },
   {
     src: image3,
+    href: `https://github.com/Happiness-Meta/web-ide-front`,
     title: "Earth-IDE-N",
     period: "2024.01.28 ~ 2024.02.28 (32D)",
     techStack: [
@@ -48,6 +51,7 @@ export const projectCovers: ProjectCover[] = [
   },
   {
     src: image4,
+    href: `https://github.com/HermannChoi/GR3`,
     title: "GitHub Finder",
     period: "2023.10.27 ~ 2023.10.31 (5D)",
     techStack: ["HTML", "CSS", " JavaScript"],
