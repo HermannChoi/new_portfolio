@@ -2,6 +2,7 @@ import { css } from "@emotion/react";
 import {
   commonColors,
   flexCenterX2,
+  mediaWidths,
   widthHeightFull,
 } from "../commonStyles/commonStyles";
 import { emojiAni, firSecLeftAni } from "../commonStyles/keyframes";
@@ -12,7 +13,7 @@ export const firstSectionStyles = {
       display: flex;
       gap: 20px;
 
-      @media (max-width: 900px) {
+      @media (max-width: ${mediaWidths.first}px) {
         flex-direction: column;
       }
     `,

@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Background from "./components/Background";
 import SecondSection from "./components/SecondSection";
 import ThirdSection from "./components/ThirdSection";
+import FourthSection from "./components/FourthSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <FirstSection />
         <SecondSection />
         <ThirdSection />
+        <FourthSection />
       </main>
     </>
   );

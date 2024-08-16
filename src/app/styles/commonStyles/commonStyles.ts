@@ -1,8 +1,11 @@
 import { css } from "@emotion/react";
 import { showUp2 } from "./keyframes";
 
+export const mediaWidths = { first: 900, second: 1000, fourth: 720 };
+
 export const commonColors = {
   rep: "#0cd5a4",
+  color: "#00ffc1",
 };
 
 export const colorRep = [

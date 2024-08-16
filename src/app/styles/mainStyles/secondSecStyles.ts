@@ -3,6 +3,7 @@ import {
   commonColors,
   flexCenterX2,
   flexColumnCenter,
+  mediaWidths,
 } from "../commonStyles/commonStyles";
 
 export const secondSectionStyles = {
@@ -16,7 +17,7 @@ export const secondSectionStyles = {
     flexColumnCenter,
     css`
       width: 100%;
-      @media (max-width: 1000px) {
+      @media (max-width: ${mediaWidths.second}px) {
         row-gap: 20px;
       }
     `,
@@ -28,7 +29,7 @@ export const secondSectionStyles = {
       width: fit-content;
       transition: 0.2s;
 
-      @media (max-width: 1000px) {
+      @media (max-width: ${mediaWidths.second}px) {
         row-gap: 20px;
         align-items: center;
       }
@@ -49,7 +50,7 @@ export const secondSectionStyles = {
         background-color: ${commonColors.rep}30;
       }
 
-      @media (max-width: 1000px) {
+      @media (max-width: ${mediaWidths.second}px) {
         flex-direction: column;
       }
     `,
@@ -59,7 +60,7 @@ export const secondSectionStyles = {
       min-width: 200px;
       font-size: 2.5rem;
 
-      @media (max-width: 1000px) {
+      @media (max-width: ${mediaWidths.second}px) {
         text-align: center;
       }
     `,
@@ -69,7 +70,7 @@ export const secondSectionStyles = {
       display: flex;
       gap: 20px;
 
-      @media (max-width: 1000px) {
+      @media (max-width: ${mediaWidths.second}px) {
         flex-wrap: wrap;
         justify-content: center;
       }
