@@ -7,7 +7,7 @@ import velog from "@/app/assets/svg/velog.svg";
 import notion from "@/app/assets/svg/notion.svg";
 import profile from "@/app/assets/profile/profile.jpg";
 
-import { colorRep } from "../styles/commonStyles/commonStyles";
+import { colorRep, delayShowUpAni } from "../styles/commonStyles/commonStyles";
 import {
   firstSectionStyles,
   FSmessageStyles,
@@ -41,7 +41,7 @@ const FirstSection = () => {
                 href={blog.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                css={personalLinks.layout}
+                css={[personalLinks.layout, delayShowUpAni(i / 8 + 1)]}
               >
                 <Image
                   src={images[i]}
@@ -60,6 +60,7 @@ const FirstSection = () => {
               personalLinks.layout,
               personalLinks.name,
               `min-width: 115px;`,
+              delayShowUpAni(1.38),
             ]}
           >
             Contact Me

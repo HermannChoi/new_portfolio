@@ -30,11 +30,6 @@ from {opacity: 0; transform: translateX(-50%)}
 to {opacity: 1; transform: translateX(0%)}
 `;
 
-export const firSecRightAni = keyframes`
-from {opacity: 0; transform: translateX(50%)}
-to {opacity: 1; transform: translateX(0%)}
-`;
-
 export const rotate360 = keyframes`
   0% { 
     transform: rotate(0deg) scale(1);
