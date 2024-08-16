@@ -12,12 +12,6 @@ export const secondSectionStyles = {
       width: 100%;
     `,
   ],
-  title: [
-    css`
-      margin-bottom: 20px;
-      font-size: 4rem;
-    `,
-  ],
   main: [
     flexColumnCenter,
     css`

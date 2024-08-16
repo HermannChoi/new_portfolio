@@ -66,3 +66,10 @@ export const delayShowUpAni = (delay: number) => {
     `,
   ];
 };
+
+export const sectionTitleStyle = [
+  css`
+    font-size: 4rem;
+    margin-bottom: 20px;
+  `,
+];

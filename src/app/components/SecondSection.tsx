@@ -5,11 +5,12 @@ import Image from "next/image";
 import { techStacks } from "../constants/techStack/techStack";
 import { secondSectionStyles } from "../styles/mainStyles/secondSecStyles";
 import Link from "next/link";
+import { sectionTitleStyle } from "../styles/commonStyles/commonStyles";
 
 const SecondSection = () => {
   return (
     <section css={secondSectionStyles.layout}>
-      <h2 css={secondSectionStyles.title}>Tech Stacks</h2>
+      <h2 css={sectionTitleStyle}>Tech Stacks</h2>
       <div css={secondSectionStyles.main}>
         <div css={secondSectionStyles.outerContainer}>
           {techStacks.map((tech, i) => {
