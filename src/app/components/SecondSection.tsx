@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { techStacks } from "../constants/techStack/techStack";
 import { secondSectionStyles } from "../styles/mainStyles/secondSecStyles";
+import Link from "next/link";
 
 const SecondSection = () => {
   return (
@@ -18,22 +19,25 @@ const SecondSection = () => {
                 <div css={secondSectionStyles.techContentLayout}>
                   {tech.contents.map((content, index) => {
                     const imageSrc =
-                      content === `Emotion` || content === `Zustand`
-                        ? require(`@/app/assets/svg/${content.toLocaleLowerCase()}.png`)
-                        : require(`@/app/assets/svg/${content.toLocaleLowerCase()}.svg`);
+                      content.name === `Emotion` || content.name === `Zustand`
+                        ? require(`@/app/assets/svg/${content.name.toLocaleLowerCase()}.png`)
+                        : require(`@/app/assets/svg/${content.name.toLocaleLowerCase()}.svg`);
                     return (
-                      <div
+                      <Link
                         key={index}
+                        href={content.link}
                         css={secondSectionStyles.techContentContainer}
                       >
                         <Image
                           src={imageSrc}
-                          alt={content}
+                          alt={content.link}
                           width={30}
                           height={30}
                         />
-                        <p css={secondSectionStyles.techContent}>{content}</p>
-                      </div>
+                        <p css={secondSectionStyles.techContent}>
+                          {content.name}
+                        </p>
+                      </Link>
                     );
                   })}
                 </div>

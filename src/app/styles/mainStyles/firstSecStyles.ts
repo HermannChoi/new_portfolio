@@ -73,8 +73,7 @@ export const FSmessageStyles = {
       width: fit-content;
       padding: 5px 10px;
       border-radius: 5px;
-      margin-bottom: 10px;
-      background-color: ${commonColors.rep}90;
+      background-color: ${commonColors.rep}4d;
     `,
   ],
   emoji: [
@@ -98,7 +97,6 @@ export const personalLinks = {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 10px;
     `,
   ],
   layout: [

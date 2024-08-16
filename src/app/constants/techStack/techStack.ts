@@ -1,22 +1,68 @@
 export const techStacks = [
   {
     title: "Language",
-    contents: ["TypeScript", "JavaScript"],
+    contents: [
+      { name: "TypeScript", link: `https://www.typescriptlang.org/` },
+      {
+        name: "JavaScript",
+        link: `https://developer.mozilla.org/ko/docs/Web/JavaScript`,
+      },
+    ],
   },
   {
     title: "Framework",
-    contents: ["React", "Next.js"],
+    contents: [
+      { name: "React", link: `https://react.dev/` },
+      {
+        name: "Next.js",
+        link: `https://nextjs.org/`,
+      },
+    ],
   },
   {
     title: "Styles",
-    contents: ["Emotion", "SCSS", "Tailwind"],
+    contents: [
+      { name: "Emotion", link: `https://emotion.sh/docs/introduction` },
+      {
+        name: "SCSS",
+        link: `https://sass-lang.com/`,
+      },
+      {
+        name: "Tailwind",
+        link: `https://tailwindcss.com/`,
+      },
+    ],
   },
   {
     title: "Library",
-    contents: ["Zustand", "React-query", "Redux"],
+    contents: [
+      { name: "Zustand", link: `https://zustand-demo.pmnd.rs/` },
+      {
+        name: "React-query",
+        link: `https://tanstack.com/query/latest/docs/framework/react/overview`,
+      },
+      {
+        name: "Redux",
+        link: `https://ko.redux.js.org/introduction/getting-started/`,
+      },
+    ],
   },
   {
     title: "ETC",
-    contents: ["GitHub", "Notion", "Figma", "Slack"],
+    contents: [
+      { name: "Github", link: `https://github.com/` },
+      {
+        name: "Notion",
+        link: `https://notion.so/`,
+      },
+      {
+        name: "Figma",
+        link: `https://www.figma.com/`,
+      },
+      {
+        name: "Slack",
+        link: `https://slack.com/`,
+      },
+    ],
   },
 ];

@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { flexColumnCenterX2 } from "../commonStyles/commonStyles";
+import { commonColors, flexColumnCenterX2 } from "../commonStyles/commonStyles";
 import { rotate360 } from "../commonStyles/keyframes";
 
 export const headerStyles = {
@@ -8,8 +8,8 @@ export const headerStyles = {
       position: sticky;
       top: 0;
       width: 100%;
-      height: 60px;
-      background-color: #0cae86;
+      height: 80px;
+      background-color: ${commonColors.rep};
       z-index: 100;
     `,
   ],
@@ -50,8 +50,8 @@ export const headerStyles = {
   ],
   cd: [
     css`
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       animation: ${rotate360} 2s infinite linear;
     `,
   ],
