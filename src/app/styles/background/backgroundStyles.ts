@@ -5,6 +5,7 @@ import {
   flexColumnCenter,
   widthHeightVhFull,
 } from "../commonStyles/commonStyles";
+import { fadeIn } from "../commonStyles/keyframes";
 
 export const backgroundStyles = {
   layout: [
@@ -17,6 +18,7 @@ export const backgroundStyles = {
       gap: 10px;
       filter: blur(6px);
       z-index: -1;
+      animation: ${fadeIn} 2s;
     `,
   ],
   container: [

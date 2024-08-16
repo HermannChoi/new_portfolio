@@ -32,6 +32,7 @@ const Header = () => {
           onClick={() => setIsClicked(!isClicked)}
           css={headerStyles.menu}
         >
+          <label css={[`position: absolute; color: transparent`]}>menu</label>
           <div css={headerStyles.menubar1(isClicked)} />
         </button>
       </div>

@@ -4,7 +4,11 @@ import {
   flexCenterX2,
   widthHeightFull,
 } from "../commonStyles/commonStyles";
-import { emojiAni } from "../commonStyles/keyframes";
+import {
+  emojiAni,
+  firSecLeftAni,
+  firSecRightAni,
+} from "../commonStyles/keyframes";
 
 export const firstSectionStyles = {
   layout: [
@@ -23,6 +27,7 @@ export const firstSectionStyles = {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      animation: ${firSecLeftAni} 1.5s;
     `,
   ],
   h1: [
@@ -36,6 +41,7 @@ export const firstSectionStyles = {
       flex: 1;
       min-height: 300px;
       max-height: 600px;
+      animation: ${firSecRightAni} 1.5s;
     `,
   ],
   profileBtn: (isClicked: boolean) => {

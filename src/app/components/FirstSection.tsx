@@ -45,7 +45,7 @@ const FirstSection = () => {
               >
                 <Image
                   src={images[i]}
-                  alt="github"
+                  alt={blog.name}
                   css={personalLinks.image}
                 ></Image>
                 <p css={personalLinks.name}>{blog.name}</p>
@@ -74,6 +74,7 @@ const FirstSection = () => {
           <Image
             src={profile}
             alt="profile"
+            priority={true}
             css={firstSectionStyles.profileImage}
           />
         </button>

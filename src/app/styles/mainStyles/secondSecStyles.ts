@@ -99,6 +99,14 @@ export const secondSectionStyles = {
       }
     `,
   ],
+  techImage: [
+    css`
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      user-select: none;
+    `,
+  ],
   techContent: [
     css`
       font-size: 2rem;

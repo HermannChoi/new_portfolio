@@ -30,9 +30,8 @@ const SecondSection = () => {
                       >
                         <Image
                           src={imageSrc}
-                          alt={content.link}
-                          width={30}
-                          height={30}
+                          alt={content.link + ` stack`}
+                          css={secondSectionStyles.techImage}
                         />
                         <p css={secondSectionStyles.techContent}>
                           {content.name}
