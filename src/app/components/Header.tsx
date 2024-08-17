@@ -26,7 +26,6 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => updateProgress(setScrollProgress));
-    console.log(isEnglish);
   }, []);
 
   return (
@@ -35,7 +34,7 @@ const Header = () => {
         <div css={headerStyles.progress_bar(scrollProgress)}></div>
       </div>
       <div css={headerStyles.inner}>
-        <Image src={cd} alt="CD" css={headerStyles.cd} />
+        <Image src={cd} alt="CD" priority={true} css={headerStyles.cd} />
         {isClicked && (
           <div css={headerStyles.contentsContainer}>
             <button
@@ -48,7 +47,11 @@ const Header = () => {
             <div css={headerStyles.socialContainer}>
               {social.map((app, i) => {
                 return (
-                  <Link href={app.href} css={headerStyles.social}>
+                  <Link
+                    key={i}
+                    href={app.href}
+                    css={headerStyles.social(app.color)}
+                  >
                     <Image
                       src={require(`@/app/assets/svg/${app.name.toLowerCase()}.svg`)}
                       alt={app.name}

@@ -28,7 +28,7 @@ export const fifthSectionStyles = {
   ],
   th: [
     css`
-      padding: 15px 30px 15px 0;
+      padding: 15px 30px 15px 5px;
       text-align: left;
       font-family: sans-serif;
       border-bottom: 1px solid ${commonColors.hr};
@@ -45,16 +45,16 @@ export const fifthSectionStyles = {
   tdYear: [
     ,
     css`
+      padding-left: 5px;
       border-bottom: 1px solid ${commonColors.hr};
       color: gray;
       font-weight: 800;
       font-family: sans-serif;
     `,
   ],
-
   tdName: [
     css`
-      padding: 30px 30px 30px 0;
+      padding: 30px 30px 30px 5px;
       border-bottom: 1px solid ${commonColors.hr};
       font-size: 1.1rem;
       font-family: sans-serif;
@@ -64,7 +64,7 @@ export const fifthSectionStyles = {
   tdBuiltWith: [
     css`
       max-width: 400px;
-      padding: 30px 30px 30px 0;
+      padding: 30px 30px 30px 5px;
       border-bottom: 1px solid ${commonColors.hr};
     `,
   ],

@@ -111,26 +111,35 @@ export const headerStyles = {
       row-gap: 10px;
     `,
   ],
-  social: [
-    flexCenterX2,
-    css`
-      gap: 10px;
-      width: 100%;
-      height: 100px;
-      padding: 10px 30px;
-      border-radius: 10px;
-      font-size: 4rem;
-      transition: 0.3s;
+  social: (color: string) => {
+    return [
+      flexCenterX2,
+      css`
+        gap: 10px;
+        width: 100%;
+        height: 100px;
+        padding: 10px 30px;
+        border: 0.5px solid #fff;
+        border-radius: 10px;
+        font-size: 4rem;
+        box-shadow: 0 5px #ffffff90;
+        transition: 0.3s;
 
-      &:hover {
-        background-color: ${commonColors.color};
-      }
+        &:hover {
+          transform: translateY(5px);
+          border: none;
+          background-color: ${color};
+          box-shadow: 0 0 #fff;
+        }
 
-      @media (max-width: ${mediaWidths.header}px) {
-        font-size: 2rem;
-      }
-    `,
-  ],
+        @media (max-width: ${mediaWidths.header}px) {
+          height: 80px;
+          padding: 0px 10px;
+          font-size: 2rem;
+        }
+      `,
+    ];
+  },
   menu: [
     flexColumnCenterX2,
     css`
