@@ -81,17 +81,27 @@ const FirstSection = () => {
         </div>
       </div>
       <div css={firstSectionStyles.right}>
-        <button
-          onClick={() => setIsClicked(!isClicked)}
-          css={firstSectionStyles.profileBtn(isClicked)}
-        >
-          <Image
-            src={profile}
-            alt="profile"
-            priority={true}
-            css={firstSectionStyles.profileImage}
-          />
-        </button>
+        <div css={firstSectionStyles.flip}>
+          <div css={firstSectionStyles.card(isClicked)}>
+            <Image
+              src={profile}
+              alt="profile"
+              priority={true}
+              css={firstSectionStyles.card_front(isClicked)}
+            />
+            <button
+              onClick={() => setIsClicked(!isClicked)}
+              css={firstSectionStyles.profileBtn(isClicked)}
+            >
+              <Image
+                src={profile}
+                alt="profile"
+                priority={true}
+                css={firstSectionStyles.profileImage}
+              />
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );

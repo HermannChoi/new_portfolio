@@ -42,18 +42,50 @@ export const firstSectionStyles = {
       height: 100%;
     `,
   ],
+  flip: [
+    css`
+      width: 300px;
+      height: 300px;
+    `,
+  ],
+  card: (isClicked: boolean) => {
+    return [
+      css`
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: 1.5s;
+        transform-style: preserve-3d;
+        transform: rotateY(${isClicked ? 360 * 4 : 0}deg);
+      `,
+    ];
+  },
+  card_front: (isClicked: boolean) => {
+    return [
+      css`
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        user-select: none;
+        ${!isClicked && `filter: blur(10px); opacity: 0.5;`}
+      `,
+    ];
+  },
   profileBtn: (isClicked: boolean) => {
     return [
       css`
-        width: 300px;
-        height: 300px;
+        transform: rotateY(180deg);
+        width: 100%;
+        height: 100%;
         border: none;
         border-radius: 50%;
         background-color: transparent;
         transition: 0.2s;
         overflow: hidden;
         &:hover {
-          box-shadow: 0 0 20px #80808080;
+          box-shadow: 0 0 50px #fff;
         }
         ${!isClicked &&
         `filter: blur(10px); opacity: 0.5; &:hover { opacity: 0.7;}`}
