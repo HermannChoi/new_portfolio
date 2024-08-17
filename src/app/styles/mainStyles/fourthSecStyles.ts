@@ -106,16 +106,19 @@ export const fourthSectionStyles = {
         width: fit-content;
         font-size: 2rem;
         ${whichHovered === i && `color: ${commonColors.color};`}
-
-        &:after {
-          content: "↗";
-          position: absolute;
-          bottom: 5px;
-          right: -15px;
-          font-size: 1rem;
-          transition: 0.3s;
-          ${whichHovered === i && `transform: translate(10px, -10px);`}
-        }
+      `,
+    ];
+  },
+  directionImg: (whichHovered: number | null, i: number) => {
+    return [
+      css`
+        position: absolute;
+        bottom: 5px;
+        right: -25px;
+        width: 20px;
+        height: 20px;
+        transition: 0.3s;
+        ${whichHovered === i && `transform: translate(10px, -10px);`}
       `,
     ];
   },
