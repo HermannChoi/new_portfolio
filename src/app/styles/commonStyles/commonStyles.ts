@@ -2,6 +2,7 @@ import { css } from "@emotion/react";
 import { showUp2 } from "./keyframes";
 
 export const mediaWidths = {
+  header: 450,
   first: 900,
   second: 1000,
   third: 750,

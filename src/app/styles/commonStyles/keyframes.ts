@@ -5,16 +5,6 @@ from {opacity: 0;}
 to {opacity: 1;}
 `;
 
-export const fadeIn2 = keyframes`
-from {opacity: 0; transform: translateY(-20px)}
-to {opacity: 1;}
-`;
-
-export const fadeOut = keyframes`
-from {opacity:1;} 
-to {opacity:0; display:none;}
-`;
-
 export const showUp = keyframes`
 from {transform: translateY(-15px); opacity:0;}
 to {transform: translateY(0); opacity:1;}
@@ -23,11 +13,6 @@ to {transform: translateY(0); opacity:1;}
 export const showUp2 = keyframes`
 from {transform: translateY(15px); opacity:0;}
 to {transform: translateY(0); opacity:1;}
-`;
-
-export const firSecLeftAni = keyframes`
-from {opacity: 0; transform: translateX(-50%)}
-to {opacity: 1; transform: translateX(0%)}
 `;
 
 export const rotate360 = keyframes`

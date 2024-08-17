@@ -16,9 +16,13 @@ import {
 import Link from "next/link";
 import { blogs } from "../constants/blogs";
 import { useState } from "react";
+import { useRecoilValue } from "recoil";
+import { languageAtom } from "../atoms/languageAtoms";
 
 const FirstSection = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
+
+  const isEnglish = useRecoilValue(languageAtom);
 
   const images = [github, velog, notion];
 
@@ -29,10 +33,19 @@ const FirstSection = () => {
           <div css={FSmessageStyles.emoji}>✌️</div>
           <p css={FSmessageStyles.message}>Open to work</p>
         </div>
-        <h1 css={firstSectionStyles.h1}>
-          Hello, this is the <span css={colorRep}>detail-oriented</span>{" "}
-          frontend developer, <span css={colorRep}>Yunseok Choi</span>
-        </h1>
+
+        {isEnglish ? (
+          <h1 css={firstSectionStyles.h1}>
+            Hello, this is the <span css={colorRep}>detail-oriented</span>{" "}
+            frontend developer, <span css={colorRep}>Yunseok Choi</span>
+          </h1>
+        ) : (
+          <h1 css={firstSectionStyles.h1}>
+            안녕하세요, <span css={colorRep}>디테일 바라기</span> 프론트엔드
+            개발자, <span css={colorRep}>최윤석</span>입니다.
+          </h1>
+        )}
+
         <div css={personalLinks.container}>
           {blogs.map((blog, i) => {
             return (

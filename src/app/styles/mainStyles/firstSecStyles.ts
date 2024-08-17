@@ -5,7 +5,7 @@ import {
   mediaWidths,
   widthHeightFull,
 } from "../commonStyles/commonStyles";
-import { emojiAni, firSecLeftAni } from "../commonStyles/keyframes";
+import { emojiAni } from "../commonStyles/keyframes";
 
 export const firstSectionStyles = {
   layout: [
@@ -25,12 +25,12 @@ export const firstSectionStyles = {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      animation: ${firSecLeftAni} 1.5s;
     `,
   ],
   h1: [
     css`
       font-size: 3rem;
+      font-weight: 500;
     `,
   ],
   right: [

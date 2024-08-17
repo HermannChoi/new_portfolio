@@ -42,6 +42,10 @@ export const techStacks = [
         link: `https://tanstack.com/query/latest/docs/framework/react/overview`,
       },
       {
+        name: "recoil",
+        link: `https://recoiljs.org/ko/`,
+      },
+      {
         name: "Redux",
         link: `https://ko.redux.js.org/introduction/getting-started/`,
       },

@@ -6,3 +6,15 @@ export const blogs = [
     name: "Notion",
   },
 ];
+
+export const social = [
+  { href: "https://github.com/HermannChoi", name: "GitHub" },
+  {
+    href: "https://www.linkedin.com/in/yunseok-choi-2211b5305/",
+    name: "LinkedIn",
+  },
+  {
+    href: "https://www.instagram.com/hl.xii_yunseok/",
+    name: "Instagram",
+  },
+];

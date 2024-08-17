@@ -7,5 +7,6 @@ export interface ProjectCover {
   period: string;
   techStack: string[];
   state?: string[];
-  description: string;
+  descriptionEng: string;
+  descriptionKor: string;
 }

@@ -12,10 +12,10 @@ export const projectCovers: ProjectCover[] = [
     period: "2024.05.02 ~ 2024.05.12 (11D)",
     techStack: ["Next.js", "TypeScript", "Emotion", "GitHub Actions"],
     state: ["deployed", "server alive"],
-    description:
+    descriptionEng:
       "My first portfolio website. On the first page, I've implemented links to my blog posts, the tech stack I can work with, and image links that lead to my projects.",
-    // description:
-    //   "저의 첫번째 포트폴리오 사이트입니다. 첫번째 페이지에 저의 블로그들과 제가 사용할 수 있는 기술스택, 그리고 저의 프로젝트들을 보러 갈 수 있게 해주는 사진링크를 구현하였습니다.",
+    descriptionKor:
+      "저의 첫번째 포트폴리오 사이트입니다. 첫번째 페이지에 저의 블로그들과 제가 사용할 수 있는 기술스택, 그리고 저의 프로젝트들을 보러 갈 수 있게 해주는 사진링크를 구현하였습니다.",
   },
   {
     src: image2,
@@ -31,10 +31,10 @@ export const projectCovers: ProjectCover[] = [
       "Github Actions",
     ],
     state: ["deployed", "server alive"],
-    description:
+    descriptionEng:
       "This is a service for job-seeking developers. It provides users with resume and portfolio templates, along with guided messages for each section to make the writing process easier. Additionally, company members can view these completed resumes and portfolios and hire candidates through a coffee chat service.",
-    // description:
-    //   "구직중인 개발자들을 위한 서비스입니다. 이용자에게 이력서와 포트폴리오의 템플릿을 제공하고 한 섹션마다 가이드 메세지를 보여줘 보다 쉽게 작성할 수 있게 만들수 있도록 디자인하였습니다. 또한 기업 회원은 이렇게 만들어진 이력서 및 포트폴리오를 보고 커피챗을 통해 고용할 수 있는 서비스입니다.",
+    descriptionKor:
+      "구직중인 개발자들을 위한 서비스입니다. 이용자에게 이력서와 포트폴리오의 템플릿을 제공하고 한 섹션마다 가이드 메세지를 보여줘 보다 쉽게 작성할 수 있게 만들수 있도록 디자인하였습니다. 또한 기업 회원은 이렇게 만들어진 이력서 및 포트폴리오를 보고 커피챗을 통해 고용할 수 있는 서비스입니다.",
   },
   {
     src: image3,
@@ -50,10 +50,10 @@ export const projectCovers: ProjectCover[] = [
       "React-query",
     ],
     state: ["deployed"],
-    description:
+    descriptionEng:
       "This is a web-based integrated development service. After logging in, users can CRUD their personal projects and access code file templates that include easy-to-understand code and explanations, designed for beginners. Within the project, users can create files and directories, as well as write and execute code directly in the code editor.",
-    // description:
-    //   "웹 기반 통합 개발 서비스입니다. 로그인을 통해 개인 프로젝트를 CRUD할 수 있고 또한 초심자를 위해 이해하기 쉬운 코드 및 설명이 첨부된 코드파일 템플릿도 제공하고 있습니다. 프로젝트 안에서 파일 및 디렉토리 생성, 그리고 코드 에디터 안에서 코드를 구현 및 실행할 수 있게 구현하였습니다.",
+    descriptionKor:
+      "웹 기반 통합 개발 서비스입니다. 로그인을 통해 개인 프로젝트를 CRUD할 수 있고 또한 초심자를 위해 이해하기 쉬운 코드 및 설명이 첨부된 코드파일 템플릿도 제공하고 있습니다. 프로젝트 안에서 파일 및 디렉토리 생성, 그리고 코드 에디터 안에서 코드를 구현 및 실행할 수 있게 구현하였습니다.",
   },
   {
     src: image4,
@@ -61,9 +61,9 @@ export const projectCovers: ProjectCover[] = [
     title: "GitHub Finder",
     period: "2023.10.27 ~ 2023.10.31 (5D)",
     techStack: ["HTML", "CSS", " JavaScript"],
-    description:
+    descriptionEng:
       "This is a service that allows users to search for GitHub profiles and display their information. Various animations have been added to make the experience more engaging. Using the GitHub API, the service displays user information such as name, number of repositories, and contribution frequency on the screen.",
-    // description:
-    //   "깃헙 유저를 검색하여 정보를 보여주는 서비스입니다. 여러가지 애니메이션을 추가해 이용자의 재미를 붙였고, GitHub API를 이용해서 이름, 레포지토리 수, 기여 빈도 수 등 유저의 정보들을 불러와 화면에 띄워지게 구현하였습니다.",
+    descriptionKor:
+      "깃헙 유저를 검색하여 정보를 보여주는 서비스입니다. 여러가지 애니메이션을 추가해 이용자의 재미를 붙였고, GitHub API를 이용해서 이름, 레포지토리 수, 기여 빈도 수 등 유저의 정보들을 불러와 화면에 띄워지게 구현하였습니다.",
   },
 ];

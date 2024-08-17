@@ -8,13 +8,16 @@ import {
 import { fourthSectionStyles } from "../styles/mainStyles/fourthSecStyles";
 import { projectCovers } from "../constants/projectCovers/projectCovers";
 import Image from "next/image";
-import direction from "@/app/assets/svg/direction.svg";
 import { useState } from "react";
 import Link from "next/link";
 import FifthSection from "./FifthSection";
+import { useRecoilValue } from "recoil";
+import { languageAtom } from "../atoms/languageAtoms";
 
 const FourthSection = () => {
   const [whichHovered, setWhichHovered] = useState<number | null>(null);
+
+  const isEnglish = useRecoilValue(languageAtom);
 
   return (
     <div css={fourthSectionStyles.outline}>
@@ -66,7 +69,9 @@ const FourthSection = () => {
                   />
                 </svg>
               </p>
-              <p css={fourthSectionStyles.description}>{projCov.description}</p>
+              <p css={fourthSectionStyles.description}>
+                {isEnglish ? projCov.descriptionEng : projCov.descriptionKor}
+              </p>
               <p css={fourthSectionStyles.date}>{projCov.period}</p>
 
               <div css={fourthSectionStyles.stackContainer}>

@@ -1,5 +1,9 @@
 import { css } from "@emotion/react";
-import { commonColors, flexColumnCenterX2 } from "../commonStyles/commonStyles";
+import {
+  commonColors,
+  flexColumnCenterX2,
+  mediaWidths,
+} from "../commonStyles/commonStyles";
 
 export const footerStyles = {
   layout: [
@@ -15,6 +19,10 @@ export const footerStyles = {
       padding: 0 10px;
       font-size: 7rem;
       text-align: center;
+
+      @media (max-width: ${mediaWidths.fourth}px) {
+        font-size: 4rem;
+      }
     `,
   ],
   btn: [
