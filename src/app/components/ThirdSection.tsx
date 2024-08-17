@@ -5,6 +5,7 @@ import { css } from "@emotion/react";
 import {
   colorRep,
   flexColumnCenter,
+  mediaWidths,
   sectionTitleStyle,
 } from "../styles/commonStyles/commonStyles";
 
@@ -17,6 +18,10 @@ const ThirdSection = () => {
           css`
             font-size: 3rem;
             text-align: center;
+
+            @media (max-width: ${mediaWidths.third}px) {
+              font-size: 2rem;
+            }
           `,
         ]}
       >

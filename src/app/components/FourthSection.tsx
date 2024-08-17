@@ -7,6 +7,7 @@ import { projectCovers } from "../constants/projectCovers/projectCovers";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import FifthSection from "./FifthSection";
 
 const FourthSection = () => {
   const [whichHovered, setWhichHovered] = useState<number | null>(null);
@@ -61,6 +62,7 @@ const FourthSection = () => {
           </Link>
         );
       })}
+      <FifthSection />
     </div>
   );
 };

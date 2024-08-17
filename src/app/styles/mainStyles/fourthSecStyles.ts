@@ -122,6 +122,7 @@ export const fourthSectionStyles = {
   description: [
     css`
       font-size: 1.2rem;
+      font-family: none;
       overflow: hidden;
       opacity: 0.8;
 
@@ -135,6 +136,7 @@ export const fourthSectionStyles = {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      row-gap: 10px;
 
       @media (max-width: ${mediaWidths.fourth}px) {
         justify-content: center;

@@ -1,11 +1,18 @@
 import { css } from "@emotion/react";
 import { showUp2 } from "./keyframes";
 
-export const mediaWidths = { first: 900, second: 1000, fourth: 720 };
+export const mediaWidths = {
+  first: 900,
+  second: 1000,
+  third: 750,
+  fourth: 720,
+  fifth: 960,
+};
 
 export const commonColors = {
   rep: "#0cd5a4",
   color: "#00ffc1",
+  hr: "#80808050",
 };
 
 export const colorRep = [
@@ -74,5 +81,6 @@ export const sectionTitleStyle = [
   css`
     font-size: 4rem;
     margin-bottom: 20px;
+    text-align: center;
   `,
 ];
