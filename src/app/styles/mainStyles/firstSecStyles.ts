@@ -12,6 +12,7 @@ export const firstSectionStyles = {
     css`
       display: flex;
       gap: 20px;
+      height: 80vh;
 
       @media (max-width: ${mediaWidths.first}px) {
         flex-direction: column;
@@ -38,7 +39,7 @@ export const firstSectionStyles = {
       position: relative;
       flex: 1;
       min-height: 300px;
-      max-height: 600px;
+      height: 100%;
     `,
   ],
   profileBtn: (isClicked: boolean) => {

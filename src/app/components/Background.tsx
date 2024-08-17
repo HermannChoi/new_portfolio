@@ -17,15 +17,15 @@ const Background = () => {
 
   useEffect(() => {
     setInterval(() => {
-      const randomNumber = Math.floor(Math.random() * 10);
+      const randomNumber = Math.floor(Math.random() * 7);
       setRandomOrder1(randomNumber);
     }, 1100);
     setInterval(() => {
-      const randomNumber = Math.floor(Math.random() * 10);
+      const randomNumber = Math.floor(Math.random() * 7);
       setRandomOrder2(randomNumber);
     }, 1300);
     setInterval(() => {
-      const randomNumber = Math.floor(Math.random() * 10);
+      const randomNumber = Math.floor(Math.random() * 7);
       setRandomOrder3(randomNumber);
     }, 1800);
   }, []);

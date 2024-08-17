@@ -7,7 +7,7 @@ export const mainStyles = {
       flex-direction: column;
       row-gap: 30vh;
       width: 100%;
-      padding: 30vh 50px 50px;
+      padding: 50px;
     `,
   ],
 };
