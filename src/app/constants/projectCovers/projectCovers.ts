@@ -17,7 +17,7 @@ export const projectCovers: ProjectCover[] = [
   },
   {
     src: image2,
-    href: `https://palette.run/`,
+    href: `https://github.com/Happiness-Meta/final-front`,
     title: "Palette*",
     period: "2024.03.04 ~ 2024.04.22 (49D)",
     techStack: [
@@ -30,7 +30,7 @@ export const projectCovers: ProjectCover[] = [
     ],
     state: ["deployed", "server alive"],
     description:
-      "구직중인 개발자들을 위한 서비스입니다. 이용자들의 이력서와 포트폴리오의 템플릿 제공 및 한 섹션마다 가이드 메세지를 통해 보다 쉽게 작성할 수 있게 만들었습니다. 또한 기업 회원은 이렇게 만들어진 이력서 및 포트폴리오를 보고 커피챗을 통해 고용할 수 있는 서비스입니다.",
+      "구직중인 개발자들을 위한 서비스입니다. 이용자에게 이력서와 포트폴리오의 템플릿을 제공하고 한 섹션마다 가이드 메세지를 보여줘 보다 쉽게 작성할 수 있게 만들수 있도록 디자인하였습니다. 또한 기업 회원은 이렇게 만들어진 이력서 및 포트폴리오를 보고 커피챗을 통해 고용할 수 있는 서비스입니다.",
   },
   {
     src: image3,

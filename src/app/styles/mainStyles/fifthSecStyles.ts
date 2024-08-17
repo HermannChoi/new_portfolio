@@ -21,8 +21,9 @@ export const fifthSectionStyles = {
   ],
   thead: [
     css`
-      positoin: sticky;
-      top: 60px;
+      position: sticky;
+      top: 80px;
+      backdrop-filter: blur(10px);
     `,
   ],
   th: [
@@ -35,7 +36,10 @@ export const fifthSectionStyles = {
   ],
   tr: [
     css`
-      padding: 15px 30px 15px 0;
+      transition: background-color 0.2s;
+      &:hover {
+        background-color: ${commonColors.rep}15;
+      }
     `,
   ],
   tdYear: [

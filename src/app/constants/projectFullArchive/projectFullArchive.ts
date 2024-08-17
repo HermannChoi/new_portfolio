@@ -45,21 +45,21 @@ export const projectFullArchive: ProjectFullArchive[] = [
   },
   {
     year: 2023,
-    name: "CPK 노트",
+    name: "CPK Note",
     personnel: 3,
     techStack: ["Next.js", "TypeScript", "SCSS", "Redux"],
     link: "https://github.com/Matilda0730/231208-goormtoy2-noteapp?tab=readme-ov-file",
   },
   {
     year: 2023,
-    name: "오늘의 운세",
+    name: "I'm Lucky Today",
     personnel: 3,
     techStack: ["React", "TypeScript", "Zustand"],
     link: "https://github.com/BearWithpy/goorm_horoscope_today",
   },
   {
     year: 2023,
-    name: "쇼핑몰 with React",
+    name: "Shopping Mall with React",
     personnel: 1,
     techStack: ["React", "JavaScript", "Zustand", "Firebase"],
     link: "https://github.com/HermannChoi/GR6",
@@ -87,7 +87,7 @@ export const projectFullArchive: ProjectFullArchive[] = [
   },
   {
     year: 2023,
-    name: "netflix clone coding",
+    name: "Netflix clone coding",
     personnel: 1,
     techStack: ["HTML", "CSS"],
     link: "https://github.com/HermannChoi/GoormAssignment",
