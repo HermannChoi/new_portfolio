@@ -12,7 +12,9 @@ export const footerStyles = {
   ],
   text: [
     css`
+      padding: 0 10px;
       font-size: 7rem;
+      text-align: center;
     `,
   ],
 };

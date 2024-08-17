@@ -10,7 +10,7 @@ export const fifthSectionStyles = {
       margin-top: 20px;
       background-color: transparent;
       font-size: 1rem;
-      font-family: none;
+      font-family: sans-serif;
       transition: 0.2s;
 
       &:hover {
@@ -30,7 +30,7 @@ export const fifthSectionStyles = {
     css`
       padding: 15px 30px 15px 0;
       text-align: left;
-      font-family: none;
+      font-family: sans-serif;
       border-bottom: 1px solid ${commonColors.hr};
     `,
   ],
@@ -48,7 +48,7 @@ export const fifthSectionStyles = {
       border-bottom: 1px solid ${commonColors.hr};
       color: gray;
       font-weight: 800;
-      font-family: none;
+      font-family: sans-serif;
     `,
   ],
 
@@ -57,7 +57,7 @@ export const fifthSectionStyles = {
       padding: 30px 30px 30px 0;
       border-bottom: 1px solid ${commonColors.hr};
       font-size: 1.1rem;
-      font-family: none;
+      font-family: sans-serif;
       font-weight: 700;
     `,
   ],
@@ -84,7 +84,7 @@ export const fifthSectionStyles = {
   link: [
     css`
       color: gray;
-      font-family: none;
+      font-family: sans-serif;
 
       &:hover {
         color: ${commonColors.color};

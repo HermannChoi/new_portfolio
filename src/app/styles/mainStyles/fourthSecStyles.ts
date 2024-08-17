@@ -56,7 +56,7 @@ export const fourthSectionStyles = {
     css`
       font-size: 1rem;
       font-weight: 600;
-      font-family: none;
+      font-family: sans-serif;
       opacity: 0.6;
     `,
   ],
@@ -122,7 +122,7 @@ export const fourthSectionStyles = {
   description: [
     css`
       font-size: 1.2rem;
-      font-family: none;
+      font-family: sans-serif;
       overflow: hidden;
       opacity: 0.8;
 
@@ -151,7 +151,7 @@ export const fourthSectionStyles = {
       color: ${commonColors.color};
       background-color: ${commonColors.rep}30;
       font-size: 1rem;
-      font-family: none;
+      font-family: sans-serif;
     `,
   ],
 };
