@@ -15,7 +15,11 @@ const SecondSection = () => {
         <div css={secondSectionStyles.outerContainer}>
           {techStacks.map((tech, i) => {
             return (
-              <div key={i} css={secondSectionStyles.innerContainer}>
+              <div
+                key={i}
+                className="fade-wrap"
+                css={secondSectionStyles.innerContainer}
+              >
                 <p css={secondSectionStyles.techTitle}>{tech.title}</p>
                 <div css={secondSectionStyles.techContentLayout}>
                   {tech.contents.map((content, index) => {

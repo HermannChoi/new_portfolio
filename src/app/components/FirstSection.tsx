@@ -23,7 +23,7 @@ const FirstSection = () => {
   const images = [github, velog, notion];
 
   return (
-    <section css={firstSectionStyles.layout}>
+    <section className="fade-wrap" css={firstSectionStyles.layout}>
       <div css={firstSectionStyles.left}>
         <div css={FSmessageStyles.layout}>
           <div css={FSmessageStyles.emoji}>✌️</div>

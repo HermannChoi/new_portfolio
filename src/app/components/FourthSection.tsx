@@ -19,6 +19,7 @@ const FourthSection = () => {
         return (
           <Link
             key={i}
+            className="fade-wrap"
             href={projCov.href}
             onMouseEnter={() => setWhichHovered(i)}
             onMouseLeave={() => setWhichHovered(null)}

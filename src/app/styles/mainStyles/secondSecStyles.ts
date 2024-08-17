@@ -43,7 +43,7 @@ export const secondSectionStyles = {
       min-height: 60px;
       padding: 5px 20px;
       border-radius: 0.5rem;
-      transition: 0.2s;
+      transition: background-color 0.2s, transform 0.2s, left 1.5s, opacity 1.5s;
 
       &:hover {
         transform: scale(1.03, 1);

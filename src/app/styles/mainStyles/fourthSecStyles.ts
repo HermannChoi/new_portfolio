@@ -26,7 +26,7 @@ export const fourthSectionStyles = {
       padding: 10px 15px;
       border: 2px solid transparent;
       border-radius: 10px;
-      transition: background-color 0.2s;
+      transition: background-color 0.2s, left 1.5s, opacity 1.5s;
       cursor: pointer;
 
       &:hover {

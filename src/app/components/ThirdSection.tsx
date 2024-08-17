@@ -11,7 +11,7 @@ import {
 
 const ThirdSection = () => {
   return (
-    <section css={[flexColumnCenter]}>
+    <section className="fade-wrap2" css={[flexColumnCenter]}>
       <h2 css={sectionTitleStyle}>My Objective</h2>
       <p
         css={[
