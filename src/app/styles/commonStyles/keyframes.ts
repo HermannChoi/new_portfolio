@@ -55,3 +55,8 @@ export const emojiAni = keyframes`
 70% {transform: scale(1.2) rotate(-30deg)}
 100% {transform: scale(1)}
 `;
+
+export const gettingBiggerAni = keyframes`
+from { transform: translate(-50%, -50%) scale(1); opacity: 1;}
+to { transform: translate(-50%, -50%) scale(1.5); opacity: 0;}
+`;

@@ -33,7 +33,7 @@ const FifthSection = () => {
       {isClicked && (
         <>
           <h2 css={sectionTitleStyle}>All Projects</h2>
-          <table>
+          <table css={fifthSectionStyles.table}>
             <thead css={fifthSectionStyles.thead}>
               <tr css={fifthSectionStyles.tr}>
                 {thData.map((title, i) => {
@@ -84,7 +84,7 @@ const FifthSection = () => {
       )}
       <button
         onClick={() => setIsClicked(!isClicked)}
-        css={fifthSectionStyles.switchBtn}
+        css={fifthSectionStyles.switchBtn(isClicked)}
       >
         {isClicked ? `Minimize` : `View Full Project Archive`}
       </button>

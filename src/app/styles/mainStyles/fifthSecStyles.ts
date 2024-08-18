@@ -1,22 +1,58 @@
 import { css } from "@emotion/react";
 import { commonColors, mediaWidths } from "../commonStyles/commonStyles";
+import { gettingBiggerAni } from "../commonStyles/keyframes";
 
 export const fifthSectionStyles = {
-  switchBtn: [
-    css`
-      padding: 5px 10px;
-      border: 1px solid ${commonColors.rep}90;
-      border-radius: 5px;
-      margin-top: 20px;
-      background-color: transparent;
-      font-size: 1rem;
-      font-family: sans-serif;
-      transition: 0.2s;
+  switchBtn: (isClicked: boolean) => {
+    return [
+      css`
+        position: relative;
+        padding: 5px 10px;
+        border: 1px solid ${commonColors.rep}90;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: transparent;
+        font-size: 1rem;
+        font-family: sans-serif;
+        transition: 0.2s;
 
-      &:hover {
-        transform: scaleX(1.05);
-        color: ${commonColors.color};
-      }
+        &:hover {
+          transform: scaleX(1.05);
+          color: ${commonColors.color};
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(1.2);
+          width: 100%;
+          height: 100%;
+          border: 2px solid ${commonColors.rep}50;
+          border-radius: 5px;
+          opacity: 0;
+          animation: ${gettingBiggerAni} 1s infinite;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(1.2);
+          width: 100%;
+          height: 100%;
+          border: 2px solid ${commonColors.rep}50;
+          border-radius: 5px;
+          opacity: 0;
+          animation: ${gettingBiggerAni} 1.2s infinite;
+        }
+      `,
+    ];
+  },
+  table: [
+    css`
+      border-collapse: collapse;
     `,
   ],
   thead: [
@@ -31,11 +67,11 @@ export const fifthSectionStyles = {
       padding: 15px 30px 15px 5px;
       text-align: left;
       font-family: sans-serif;
-      border-bottom: 1px solid ${commonColors.hr};
     `,
   ],
   tr: [
     css`
+      border-bottom: 1px solid ${commonColors.hr};
       transition: background-color 0.2s;
       &:hover {
         background-color: ${commonColors.rep}15;
@@ -46,7 +82,6 @@ export const fifthSectionStyles = {
     ,
     css`
       padding-left: 5px;
-      border-bottom: 1px solid ${commonColors.hr};
       color: gray;
       font-weight: 800;
       font-family: sans-serif;
@@ -54,8 +89,7 @@ export const fifthSectionStyles = {
   ],
   tdName: [
     css`
-      padding: 30px 30px 30px 5px;
-      border-bottom: 1px solid ${commonColors.hr};
+      padding: 15px 30px 15px 5px;
       font-size: 1.1rem;
       font-family: sans-serif;
       font-weight: 700;
@@ -65,13 +99,11 @@ export const fifthSectionStyles = {
     css`
       max-width: 400px;
       padding: 30px 30px 30px 5px;
-      border-bottom: 1px solid ${commonColors.hr};
     `,
   ],
   tdLink: [
     css`
       max-width: 300px;
-      border-bottom: 1px solid ${commonColors.hr};
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
