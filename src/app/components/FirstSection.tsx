@@ -78,6 +78,19 @@ const FirstSection = () => {
           >
             Contact Me
           </button>
+          <Link
+            href={`/yunseok_choi_resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            css={[
+              personalLinks.layout,
+              personalLinks.name,
+              `min-width: 115px;`,
+              delayShowUpAni(1.5),
+            ]}
+          >
+            My Resume
+          </Link>
         </div>
       </div>
       <div css={firstSectionStyles.right}>
