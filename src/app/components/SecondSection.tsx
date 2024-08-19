@@ -36,6 +36,9 @@ const SecondSection = () => {
                         <Image
                           src={imageSrc}
                           alt={content.link + ` stack`}
+                          loading="lazy"
+                          width={30}
+                          height={30}
                           css={secondSectionStyles.techImage}
                         />
                         <p css={secondSectionStyles.techContent}>

@@ -88,7 +88,7 @@ export const firstSectionStyles = {
           box-shadow: 0 0 50px #fff;
         }
         ${!isClicked &&
-        `filter: blur(10px); opacity: 0.5; &:hover { opacity: 0.7;}`}
+        `filter: blur(5px); opacity: 0.5; &:hover { opacity: 0.7;}`}
       `,
     ];
   },

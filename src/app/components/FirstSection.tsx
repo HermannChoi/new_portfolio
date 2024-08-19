@@ -27,7 +27,7 @@ const FirstSection = () => {
   const images = [github, velog, notion];
 
   return (
-    <section className="fade-wrap" css={firstSectionStyles.layout}>
+    <section css={firstSectionStyles.layout}>
       <div css={firstSectionStyles.left}>
         <div css={FSmessageStyles.layout}>
           <div css={FSmessageStyles.emoji}>✌️</div>
@@ -54,11 +54,11 @@ const FirstSection = () => {
                 href={blog.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                css={[personalLinks.layout, delayShowUpAni(i / 8 + 1)]}
+                css={[personalLinks.layout, delayShowUpAni(i / 8)]}
               >
                 <Image
                   src={images[i]}
-                  alt={blog.name}
+                  alt={blog.name + i}
                   css={personalLinks.image}
                 ></Image>
                 <p css={personalLinks.name}>{blog.name}</p>
@@ -73,7 +73,7 @@ const FirstSection = () => {
               personalLinks.layout,
               personalLinks.name,
               `min-width: 115px;`,
-              delayShowUpAni(1.38),
+              delayShowUpAni(0.38),
             ]}
           >
             Contact Me
@@ -86,7 +86,7 @@ const FirstSection = () => {
               personalLinks.layout,
               personalLinks.name,
               `min-width: 115px;`,
-              delayShowUpAni(1.5),
+              delayShowUpAni(0.5),
             ]}
           >
             My Resume
@@ -94,12 +94,12 @@ const FirstSection = () => {
         </div>
       </div>
       <div css={firstSectionStyles.right}>
-        <div css={firstSectionStyles.flip}>
+        <div css={[firstSectionStyles.flip, , delayShowUpAni(1)]}>
           <div css={firstSectionStyles.card(isClicked)}>
             <Image
               src={profile}
               alt="profile"
-              priority={true}
+              loading="lazy"
               css={firstSectionStyles.card_front(isClicked)}
             />
             <button

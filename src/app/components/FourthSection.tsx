@@ -37,6 +37,7 @@ const FourthSection = () => {
                 <Image
                   src={projCov.src}
                   alt={projCov.title}
+                  loading="lazy"
                   css={fourthSectionStyles.imageContainer}
                 />
               </figure>
