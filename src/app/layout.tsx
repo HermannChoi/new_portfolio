@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import RecoilRootWrapper from "./utils/RecoilWrapper";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,10 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <RecoilRootWrapper>{children}</RecoilRootWrapper>
+        <RecoilRootWrapper>
+          {children}
+          <SpeedInsights />
+        </RecoilRootWrapper>
       </body>
     </html>
   );
