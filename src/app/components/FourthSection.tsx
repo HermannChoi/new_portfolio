@@ -38,6 +38,7 @@ const FourthSection = () => {
                   src={projCov.src}
                   alt={projCov.title}
                   loading="lazy"
+                  placeholder={"empty"}
                   css={fourthSectionStyles.imageContainer}
                 />
               </figure>
