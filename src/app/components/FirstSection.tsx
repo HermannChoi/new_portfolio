@@ -79,7 +79,7 @@ const FirstSection = () => {
             Contact Me
           </button>
           <Link
-            href={`/yunseok_choi_resume.pdf`}
+            href={`/resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             css={[
