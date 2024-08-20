@@ -1,5 +1,5 @@
 import { ProjectCover } from "@/app/types/projectComponentTypes/projectCover";
-import image1 from "@/app/assets/projectImages/myPortfolioImg.png";
+import image1 from "@/app/assets/projectImages/myportfolioImg.png";
 import image2 from "@/app/assets/projectImages/paletteImg.png";
 import image3 from "@/app/assets/projectImages/earthidenImg.png";
 import image4 from "@/app/assets/projectImages/githubfinderImg.png";
