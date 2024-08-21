@@ -6,6 +6,7 @@ import github from "@/app/assets/svg/github.svg";
 import velog from "@/app/assets/svg/velog.svg";
 import notion from "@/app/assets/svg/notion.svg";
 import profile from "@/app/assets/profile/profile.jpg";
+import resume from "@/app/assets/svg/resume.svg";
 
 import { colorRep, delayShowUpAni } from "../styles/commonStyles/commonStyles";
 import {
@@ -24,7 +25,7 @@ const FirstSection = () => {
 
   const isEnglish = useRecoilValue(languageAtom);
 
-  const images = [github, velog, notion];
+  const images = [github, velog, notion, resume];
 
   return (
     <section css={firstSectionStyles.layout}>
@@ -54,7 +55,7 @@ const FirstSection = () => {
                 href={blog.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                css={[personalLinks.layout, delayShowUpAni(i / 8)]}
+                css={[personalLinks.layout, delayShowUpAni(i / 8 + 1)]}
               >
                 <Image
                   src={images[i]}
@@ -72,25 +73,11 @@ const FirstSection = () => {
             css={[
               personalLinks.layout,
               personalLinks.name,
-              `min-width: 115px;`,
-              delayShowUpAni(0.38),
+              delayShowUpAni(0.5 + 1),
             ]}
           >
             Contact Me
           </button>
-          <Link
-            href={`/resume.pdf`}
-            target="_blank"
-            rel="noopener noreferrer"
-            css={[
-              personalLinks.layout,
-              personalLinks.name,
-              `min-width: 115px;`,
-              delayShowUpAni(0.5),
-            ]}
-          >
-            My Resume
-          </Link>
         </div>
       </div>
       <div css={firstSectionStyles.right}>

@@ -15,6 +15,13 @@ from {transform: translateY(15px); opacity:0;}
 to {transform: translateY(0); opacity:1;}
 `;
 
+export const firstCoverAni = keyframes`
+from {height: 100vh; }
+30% {height: 100vh;}
+70% {height: 80px; opacity: 1;}
+100% {height: 80px; opacity: 0;}
+`;
+
 export const rotate360 = keyframes`
   0% { 
     transform: rotate(0deg) scale(1);
