@@ -10,7 +10,7 @@ export const techStacks = [
     ],
   },
   {
-    title: "Framework",
+    title: "FWK & Lib.",
     contents: [
       {
         name: "Next.js",
@@ -24,7 +24,7 @@ export const techStacks = [
     ],
   },
   {
-    title: "Styles",
+    title: "Style",
     contents: [
       { name: "Emotion", link: `https://emotion.sh/docs/introduction` },
       {
@@ -38,7 +38,7 @@ export const techStacks = [
     ],
   },
   {
-    title: "Library",
+    title: "State Mgmt.",
     contents: [
       { name: "Zustand", link: `https://zustand-demo.pmnd.rs/` },
       {
