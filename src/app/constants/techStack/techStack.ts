@@ -12,10 +12,14 @@ export const techStacks = [
   {
     title: "Framework",
     contents: [
-      { name: "React", link: `https://react.dev/` },
       {
         name: "Next.js",
         link: `https://nextjs.org/`,
+      },
+      { name: "React", link: `https://react.dev/` },
+      {
+        name: "React-native",
+        link: `https://reactnative.dev/`,
       },
     ],
   },
