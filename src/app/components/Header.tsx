@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 /** @jsxImportSource @emotion/react */
 
@@ -10,6 +11,7 @@ import { useRecoilState } from "recoil";
 import { languageAtom } from "../atoms/languageAtoms";
 import { social } from "../constants/blogs";
 import Link from "next/link";
+import { useCookies } from "react-cookie";
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
@@ -17,8 +19,14 @@ const Header = () => {
 
   const [isEnglish, setIsEnglish] = useRecoilState(languageAtom);
 
+  const [cookies, setCookie] = useCookies(["isEnglish"]);
+
   const clickLanguage = () => {
     setIsEnglish(!isEnglish);
+    setCookie("isEnglish", !isEnglish, {
+      path: "/",
+      maxAge: 60 * 60 * 24 * 365,
+    });
     setTimeout(() => {
       setIsClicked(false);
     }, 500);
@@ -26,6 +34,11 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => updateProgress(setScrollProgress));
+    if (cookies.isEnglish) {
+      setIsEnglish(true);
+    } else {
+      setIsEnglish(false);
+    }
   }, []);
 
   return (

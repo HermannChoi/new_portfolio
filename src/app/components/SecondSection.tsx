@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 /** @jsxImportSource @emotion/react */
 
 import { techStacks } from "../constants/techStack/techStack";
 import { secondSectionStyles } from "../styles/mainStyles/secondSecStyles";
-import Link from "next/link";
 import { sectionTitleStyle } from "../styles/commonStyles/commonStyles";
+import Image from "next/image";
+import Link from "next/link";
 
 const SecondSection = () => {
   return (
