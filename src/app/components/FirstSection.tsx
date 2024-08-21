@@ -81,7 +81,7 @@ const FirstSection = () => {
         </div>
       </div>
       <div css={firstSectionStyles.right}>
-        <div css={[firstSectionStyles.flip, , delayShowUpAni(1)]}>
+        <div css={[firstSectionStyles.flip, , delayShowUpAni(2)]}>
           <div css={firstSectionStyles.card(isClicked)}>
             <Image
               src={profile}

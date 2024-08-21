@@ -17,9 +17,9 @@ to {transform: translateY(0); opacity:1;}
 
 export const firstCoverAni = keyframes`
 from {height: 100vh; }
-30% {height: 100vh;}
-70% {height: 80px; opacity: 1;}
-100% {height: 80px; opacity: 0;}
+30% {height: 100vh; font-size: 4rem;}
+70% {height: 80px; opacity: 1; font-size: 2rem; }
+100% {height: 80px; opacity: 0; font-size: 2rem;}
 `;
 
 export const rotate360 = keyframes`
@@ -61,6 +61,12 @@ export const emojiAni = keyframes`
 55% {transform: scale(1.2) rotate(30deg)}
 70% {transform: scale(1.2) rotate(-30deg)}
 100% {transform: scale(1)}
+`;
+
+export const profileBtnAni = keyframes`
+0%{box-shadow: 0 0 0px #fff;}
+50%{box-shadow: 0 0 50px #fff;}
+100%{box-shadow: 0 0 0px #fff;}
 `;
 
 export const gettingBiggerAni = keyframes`

@@ -5,7 +5,7 @@ import {
   mediaWidths,
   widthHeightFull,
 } from "../commonStyles/commonStyles";
-import { emojiAni } from "../commonStyles/keyframes";
+import { emojiAni, profileBtnAni } from "../commonStyles/keyframes";
 
 export const firstSectionStyles = {
   layout: [
@@ -84,11 +84,12 @@ export const firstSectionStyles = {
         background-color: transparent;
         transition: 0.2s;
         overflow: hidden;
+        animation: ${!isClicked && profileBtnAni} 2s infinite;
         &:hover {
           box-shadow: 0 0 50px #fff;
         }
         ${!isClicked &&
-        `filter: blur(5px); opacity: 0.5; &:hover { opacity: 0.7;}`}
+        `filter: blur(5px); opacity: 0.5; &:hover { opacity: 0.8;}`}
       `,
     ];
   },
@@ -148,11 +149,10 @@ export const personalLinks = {
       border: 1px solid white;
       border-radius: 5px;
       background-color: transparent;
-      transition: all 0.1s;
+      transition: all 0.2s;
       &:hover {
-        transform: scale(1.1);
+        border-radius: 10px;
         border-color: ${commonColors.rep};
-        color: ${commonColors.rep};
       }
     `,
   ],
