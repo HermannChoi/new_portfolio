@@ -11,7 +11,7 @@ export const projectCovers: ProjectCover[] = [
     title: "My Portfolio v 1.0",
     period: "2024.05.02 ~ 2024.05.12 (11D)",
     techStack: ["Next.js", "TypeScript", "Emotion", "GitHub Actions"],
-    state: ["deployed", "server alive"],
+    state: ["deployed"],
     descriptionEng:
       "My first portfolio website. On the first page, I've implemented links to my blog posts, the tech stack I can work with, and image links that lead to my projects.",
     descriptionKor:
@@ -30,7 +30,7 @@ export const projectCovers: ProjectCover[] = [
       "Zustand",
       "Github Actions",
     ],
-    state: ["deployed", "server alive"],
+    state: ["deployed"],
     descriptionEng:
       "This is a service for job-seeking developers. It provides users with resume and portfolio templates, along with guided messages for each section to make the writing process easier. Additionally, company members can view these completed resumes and portfolios and hire candidates through a coffee chat service.",
     descriptionKor:
@@ -49,7 +49,6 @@ export const projectCovers: ProjectCover[] = [
       "Zustand",
       "React-query",
     ],
-    state: ["deployed"],
     descriptionEng:
       "This is a web-based integrated development service. After logging in, users can CRUD their personal projects and access code file templates that include easy-to-understand code and explanations, designed for beginners. Within the project, users can create files and directories, as well as write and execute code directly in the code editor.",
     descriptionKor:
