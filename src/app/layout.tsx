@@ -17,6 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Jua&family=New+Amsterdam&display=swap"
+          rel="stylesheet preload"
+          as="style"
+          crossOrigin=""
+        />
+      </head>
       <body className={inter.className}>
         <RecoilRootWrapper>{children}</RecoilRootWrapper>
       </body>
