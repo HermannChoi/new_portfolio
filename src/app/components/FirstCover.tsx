@@ -41,7 +41,12 @@ const FirstCover = () => {
           css={[
             css`
               width: 100vw;
-              animation: ${isMounted && firstCoverSvgAni} 4s forwards;
+              animation: ${isMounted && firstCoverSvgAni} 4s linear forwards;
+              stroke-width: 2;
+
+              @media (max-width: 600px) {
+                stroke-width: 1;
+              }
             `,
           ]}
         >
@@ -52,7 +57,11 @@ const FirstCover = () => {
             textAnchor="middle"
             css={[
               css`
-                font-size: 9vw;
+                font-size: 8rem;
+
+                @media (max-width: 600px) {
+                  font-size: 3rem;
+                }
               `,
             ]}
           >

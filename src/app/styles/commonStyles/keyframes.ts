@@ -24,11 +24,10 @@ from {height: 100vh;}
 
 export const firstCoverSvgAni = keyframes`
   0% {
-    stroke-dashoffset: 25%;
+    stroke-dashoffset: 0%;
     stroke-dasharray: 0 50%;
     fill: transparent;
     stroke: #00ffc1;
-    stroke-width: 2;
   }
   50% {
     stroke-dashoffset: -25%;
@@ -38,7 +37,6 @@ export const firstCoverSvgAni = keyframes`
   80% {
     fill: #00ffc1;
     stroke: #00ffc1;
-    stroke-width: 2;
     opacity: 1;
   }
   100% {
