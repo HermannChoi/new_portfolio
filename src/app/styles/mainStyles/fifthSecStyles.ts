@@ -7,6 +7,9 @@ export const fifthSectionStyles = {
     return [
       css`
         position: relative;
+        min-width: 200px;
+        width: 40vw;
+        height: 40px;
         padding: 5px 10px;
         border: 1px solid ${commonColors.rep}90;
         border-radius: 5px;
@@ -32,7 +35,7 @@ export const fifthSectionStyles = {
           border: 2px solid ${commonColors.rep}50;
           border-radius: 5px;
           opacity: 0;
-          animation: ${gettingBiggerAni} 1s infinite;
+          animation: ${!isClicked && gettingBiggerAni} 1s infinite;
         }
         &:after {
           content: "";
@@ -45,7 +48,7 @@ export const fifthSectionStyles = {
           border: 2px solid ${commonColors.rep}50;
           border-radius: 5px;
           opacity: 0;
-          animation: ${gettingBiggerAni} 1.2s infinite;
+          animation: ${!isClicked && gettingBiggerAni} 1.2s infinite;
         }
       `,
     ];

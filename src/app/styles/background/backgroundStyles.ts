@@ -34,13 +34,15 @@ export const backgroundStyles = {
       css`
         flex: 1;
         min-width: 300px;
-        height: 300px;
+        width: 40vh;
+        min-height: 300px;
+        height: 40vh;
         ${RO === i
           ? `border: 3px solid ${commonColors.rep};`
           : `border: 1px solid ${commonColors.rep}90;`}
         border-radius: 10px;
         color: ${RO === i ? `#808080` : `#80808080`};
-        font-size: 8rem;
+        font-size: 15vh;
         transform: translateY(${RO === i ? `0` : `-10px`});
         transition: all 0.5s;
       `,
