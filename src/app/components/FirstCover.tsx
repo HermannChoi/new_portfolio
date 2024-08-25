@@ -32,7 +32,7 @@ const FirstCover = () => {
           background-color: #000000;
           font-size: 8rem;
           white-space: nowrap;
-          animation: ${firstCoverAni} 6s forwards;
+          animation: ${firstCoverAni} 5s forwards;
           z-index: 1000;
         `,
       ]}
@@ -42,7 +42,7 @@ const FirstCover = () => {
           css={[
             css`
               width: 100vw;
-              animation: ${isMounted && firstCoverSvgAni} 4s 0.5s forwards;
+              animation: ${isMounted && firstCoverSvgAni} 4s forwards;
             `,
           ]}
         >
