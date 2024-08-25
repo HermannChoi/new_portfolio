@@ -30,7 +30,6 @@ const FirstCover = () => {
           top: 0;
           left: 0;
           background-color: #000000;
-          font-size: 8rem;
           white-space: nowrap;
           animation: ${firstCoverAni} 5s forwards;
           z-index: 1000;
@@ -46,7 +45,17 @@ const FirstCover = () => {
             `,
           ]}
         >
-          <text x="50%" y="50%" dy="40px" textAnchor="middle">
+          <text
+            x="50%"
+            y="50%"
+            dy="40px"
+            textAnchor="middle"
+            css={[
+              css`
+                font-size: 9vw;
+              `,
+            ]}
+          >
             Yunseok Choi
           </text>
         </svg>
