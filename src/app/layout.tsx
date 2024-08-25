@@ -22,7 +22,6 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Jua&family=New+Amsterdam&display=swap"
           rel="stylesheet preload"
           as="style"
-          crossOrigin=""
         />
       </head>
       <body className={inter.className}>

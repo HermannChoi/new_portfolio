@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { gettingBiggerAni, showUp2 } from "./keyframes";
+import { showUp2 } from "./keyframes";
 
 export const mediaWidths = {
   header: 550,

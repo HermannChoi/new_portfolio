@@ -21,7 +21,7 @@ export default function Home() {
     observer2();
     setTimeout(() => {
       setIsCovered(false);
-    }, 1500);
+    }, 6000);
   }, []);
 
   return (

@@ -16,10 +16,34 @@ to {transform: translateY(0); opacity:1;}
 `;
 
 export const firstCoverAni = keyframes`
-from {height: 100vh; }
-30% {height: 100vh; font-size: 4rem;}
-70% {height: 80px; opacity: 1; font-size: 2rem; }
-100% {height: 80px; opacity: 0; font-size: 2rem;}
+from {height: 100vh;}
+80% {height: 100vh;}
+90%{height: 80px; opacity: 1}
+100% {height: 80px; opacity: 0}
+`;
+
+export const firstCoverSvgAni = keyframes`
+  0% {
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    fill: transparent;
+    stroke: #00ffc1;
+    stroke-width: 2;
+  }
+  50% {
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0%;
+    fill: transparent;
+  }
+  80% {
+    fill: #00ffc1;
+    stroke: #00ffc1;
+    stroke-width: 2;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 `;
 
 export const rotate360 = keyframes`
@@ -29,8 +53,6 @@ export const rotate360 = keyframes`
   40% { 
     transform: rotate(144deg) scale(1);
   }
-  
-  /* 첫 번째 진동 */
   43% { 
     transform: rotate(154.8deg) scale(1.05);
   }
@@ -40,7 +62,6 @@ export const rotate360 = keyframes`
   50% { 
     transform: rotate(180deg) scale(1);
   }
-  /* 두 번째 진동 */
   73% { 
     transform: rotate(262.8deg) scale(1.05);
   }

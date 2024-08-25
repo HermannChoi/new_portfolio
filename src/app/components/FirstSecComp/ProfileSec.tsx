@@ -11,7 +11,7 @@ const ProfileSec = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
   return (
-    <div css={[firstSectionStyles.flip, , delayShowUpAni(2)]}>
+    <div css={[firstSectionStyles.flip, delayShowUpAni(2)]}>
       <div css={firstSectionStyles.card(isClicked)}>
         <Image
           src={profile}

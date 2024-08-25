@@ -23,7 +23,10 @@ const BlogSection = () => {
             href={blog.href}
             target="_blank"
             rel="noopener noreferrer"
-            css={[personalLinks.layout, delayShowUpAni(i / 8 + 1)]}
+            css={[
+              personalLinks.layout,
+              // , delayShowUpAni(i / 8 + 1)
+            ]}
           >
             <Image
               src={images[i]}
@@ -41,7 +44,7 @@ const BlogSection = () => {
         css={[
           personalLinks.layout,
           personalLinks.name,
-          delayShowUpAni(0.5 + 1),
+          // delayShowUpAni(0.5 + 1),
         ]}
       >
         Contact Me

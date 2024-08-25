@@ -3,13 +3,23 @@
 
 import { css } from "@emotion/react";
 import {
-  commonColors,
   flexCenterX2,
   widthHeightVhFull,
 } from "../styles/commonStyles/commonStyles";
-import { firstCoverAni } from "../styles/commonStyles/keyframes";
+import {
+  firstCoverAni,
+  firstCoverSvgAni,
+} from "../styles/commonStyles/keyframes";
+import { useEffect, useState } from "react";
 
 const FirstCover = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      setIsMounted(true);
+    });
+  }, []);
   return (
     <div
       css={[
@@ -19,15 +29,28 @@ const FirstCover = () => {
           position: fixed;
           top: 0;
           left: 0;
-          background-color: ${commonColors.rep};
-          font-size: 4rem;
+          background-color: #000000;
+          font-size: 8rem;
           white-space: nowrap;
-          animation: ${firstCoverAni} 1.5s forwards;
+          animation: ${firstCoverAni} 6s forwards;
           z-index: 1000;
         `,
       ]}
     >
-      YUNSEOK CHOI
+      {isMounted && (
+        <svg
+          css={[
+            css`
+              width: 100vw;
+              animation: ${isMounted && firstCoverSvgAni} 4s 0.5s forwards;
+            `,
+          ]}
+        >
+          <text x="50%" y="50%" dy="40px" textAnchor="middle">
+            Yunseok Choi
+          </text>
+        </svg>
+      )}
     </div>
   );
 };
