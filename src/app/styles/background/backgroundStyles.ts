@@ -33,18 +33,16 @@ export const backgroundStyles = {
       flexCenterX2,
       css`
         flex: 1;
-        min-width: 300px;
-        width: 40vh;
-        min-height: 300px;
-        height: 40vh;
+        width: 35vh;
+        height: 35vh;
         ${RO === i
           ? `border: 3px solid ${commonColors.rep};`
-          : `border: 1px solid ${commonColors.rep}90;`}
+          : `border: 3px solid ${commonColors.rep}50;`}
         border-radius: 10px;
         color: ${RO === i ? `#808080` : `#80808080`};
-        font-size: 15vh;
+        font-size: 17vh;
         transform: translateY(${RO === i ? `0` : `-10px`});
-        transition: all 0.5s;
+        transition: all 1s;
       `,
     ];
   },

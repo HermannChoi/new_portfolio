@@ -2,7 +2,6 @@ import { css } from "@emotion/react";
 import {
   commonColors,
   flexCenterX2,
-  flexColumnCenter,
   flexColumnCenterX2,
   mediaWidths,
 } from "../commonStyles/commonStyles";
