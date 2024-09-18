@@ -10,7 +10,7 @@ export const projectCovers: ProjectCover[] = [
     href: `https://my-portfolio-snowy-tau.vercel.app/`,
     title: "My Portfolio v 1.0",
     period: "2024.05.02 ~ 2024.05.12 (11D)",
-    techStack: ["Next.js", "TypeScript", "Emotion", "GitHub Actions"],
+    techStack: ["Next.js", "TypeScript", "Emotion", "Github Actions"],
     state: ["deployed"],
     descriptionEng:
       "My first portfolio website. On the first page, I've implemented links to my blog posts, the tech stack I can work with, and image links that lead to my projects.",

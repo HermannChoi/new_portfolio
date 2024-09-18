@@ -6,12 +6,11 @@ import { personalLinks } from "@/app/styles/mainStyles/firstSecStyles";
 import Image from "next/image";
 import github from "@/app/assets/svg/github.svg";
 import velog from "@/app/assets/svg/velog.svg";
-import notion from "@/app/assets/svg/notion.svg";
 import resume from "@/app/assets/svg/resume.svg";
 import Link from "next/link";
 
 const BlogSection = () => {
-  const images = [github, velog, notion, resume];
+  const images = [github, velog, resume];
 
   return (
     <div css={personalLinks.container}>
