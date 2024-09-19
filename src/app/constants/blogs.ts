@@ -1,9 +1,14 @@
 export const blogs = [
-  { href: "https://github.com/HermannChoi", name: "GitHub" },
-  { href: "https://velog.io/@hiyunseok347/posts", name: "Velog" },
+  { href: "https://github.com/HermannChoi", name: "GitHub", color: "#2b3137" },
+  {
+    href: "https://velog.io/@hiyunseok347/posts",
+    name: "Velog",
+    color: "#20c997",
+  },
   {
     href: "/resume.pdf",
     name: "Resume",
+    color: "#09a1ff",
   },
 ];
 

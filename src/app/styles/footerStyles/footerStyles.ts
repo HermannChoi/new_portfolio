@@ -31,15 +31,15 @@ export const footerStyles = {
     css`
       gap: 10px;
       padding: 5px 10px;
-      border: 1px solid #ffffff;
+      border: 0.5px solid #ffffff;
       border-radius: 5px;
       background-color: #ffffff30;
-      box-shadow: 0 5px #ffffff;
+      box-shadow: 0 5px #ffffff90;
       transition: 0.2s;
 
       &:hover {
         transform: translateY(5px);
-        box-shadow: 0 0 #ffffff;
+        box-shadow: 0 0 #ffffff90;
       }
     `,
   ],

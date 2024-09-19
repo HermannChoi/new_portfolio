@@ -27,7 +27,7 @@ const BlogSection = () => {
             href={blog.href}
             target="_blank"
             rel="noopener noreferrer"
-            css={[personalLinks.layout]}
+            css={[personalLinks.layout(blog.color)]}
           >
             <Image
               src={images[i]}
@@ -40,7 +40,7 @@ const BlogSection = () => {
       })}
       <button
         onClick={() => clickCopyBtn(isEnglish)}
-        css={[personalLinks.layout, personalLinks.name]}
+        css={[personalLinks.layout(), personalLinks.name]}
       >
         <Image src={copy} alt="copy" loading="lazy" width={25} height={25} />
         <p css={personalLinks.name}>Contact Me</p>

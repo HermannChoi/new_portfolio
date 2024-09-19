@@ -5,10 +5,16 @@ import { delayShowUpAni } from "@/app/styles/commonStyles/commonStyles";
 import { firstSectionStyles } from "@/app/styles/mainStyles/firstSecStyles";
 import Image from "next/image";
 import profile from "@/app/assets/profile/profile.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ProfileSec = () => {
   const [isClicked, setIsClicked] = useState<boolean>(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsClicked(true);
+    }, 5000);
+  }, []);
 
   return (
     <div css={[firstSectionStyles.flip, delayShowUpAni(2)]}>

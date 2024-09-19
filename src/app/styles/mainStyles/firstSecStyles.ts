@@ -136,24 +136,27 @@ export const personalLinks = {
       gap: 10px;
     `,
   ],
-  layout: [
-    css`
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      width: fit-content;
-      height: 40px;
-      padding: 10px;
-      border: 1px solid white;
-      border-radius: 5px;
-      background-color: transparent;
-      transition: all 0.2s;
-      &:hover {
-        border-radius: 10px;
-        border-color: ${commonColors.rep};
-      }
-    `,
-  ],
+  layout: (color?: string) => {
+    return [
+      css`
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        height: 40px;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: all 0.2s;
+        &:hover {
+          border-radius: 10px;
+          border-color: ${commonColors.rep};
+          background-color: ${color}80;
+        }
+      `,
+    ];
+  },
   image: [
     css`
       width: 25px;
