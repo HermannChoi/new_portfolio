@@ -32,6 +32,10 @@ export const techStacks = [
         link: `https://sass-lang.com/`,
       },
       {
+        name: "Styled-components",
+        link: `https://styled-components.com/`,
+      },
+      {
         name: "Tailwind",
         link: `https://tailwindcss.com/`,
       },
