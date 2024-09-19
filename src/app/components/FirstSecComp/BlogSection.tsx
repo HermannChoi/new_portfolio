@@ -7,9 +7,15 @@ import Image from "next/image";
 import github from "@/app/assets/svg/github.svg";
 import velog from "@/app/assets/svg/velog.svg";
 import resume from "@/app/assets/svg/resume.svg";
+import copy from "@/app/assets/svg/copy.svg";
 import Link from "next/link";
+import { clickCopyBtn } from "@/app/utils/clickCopyEmail";
+import { useRecoilValue } from "recoil";
+import { languageAtom } from "@/app/atoms/languageAtoms";
 
 const BlogSection = () => {
+  const isEnglish = useRecoilValue(languageAtom);
+
   const images = [github, velog, resume];
 
   return (
@@ -33,12 +39,11 @@ const BlogSection = () => {
         );
       })}
       <button
-        onClick={() =>
-          (window.location.href = `mailto: hiyunseok347@gmail.com`)
-        }
+        onClick={() => clickCopyBtn(isEnglish)}
         css={[personalLinks.layout, personalLinks.name]}
       >
-        Contact Me
+        <Image src={copy} alt="copy" loading="lazy" width={25} height={25} />
+        <p css={personalLinks.name}>Contact Me</p>
       </button>
     </div>
   );

@@ -1,5 +1,9 @@
 import { css } from "@emotion/react";
-import { commonColors, mediaWidths } from "../commonStyles/commonStyles";
+import {
+  commonColors,
+  flexColumnCenter,
+  mediaWidths,
+} from "../commonStyles/commonStyles";
 import { gettingBiggerAni } from "../commonStyles/keyframes";
 
 export const fifthSectionStyles = {
@@ -53,8 +57,15 @@ export const fifthSectionStyles = {
       `,
     ];
   },
+  container: [
+    flexColumnCenter,
+    css`
+      width: 100%;
+    `,
+  ],
   table: [
     css`
+      width: 100%;
       border-collapse: collapse;
     `,
   ],

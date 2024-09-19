@@ -29,7 +29,7 @@ const FifthSection = () => {
   }, []);
 
   return (
-    <div css={flexColumnCenter}>
+    <div css={fifthSectionStyles.container}>
       {isClicked && (
         <>
           <h2 css={sectionTitleStyle}>All Projects</h2>

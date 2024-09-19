@@ -3,6 +3,21 @@ import { ProjectFullArchive } from "@/app/types/projectComponentTypes/projectFul
 export const projectFullArchive: ProjectFullArchive[] = [
   {
     year: 2024,
+    name: "Take Medicine",
+    personnel: 1,
+    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand"],
+    link: "https://take-medicine.vercel.app/",
+  },
+  {
+    year: 2024,
+    name: "My Portfolio v2.0",
+    personnel: 1,
+    techStack: ["Next.js", "TypeScript", "Emotion", "Recoil"],
+    link: "https://yunseokchoi.vercel.app/",
+  },
+
+  {
+    year: 2024,
     name: "My Portfolio",
     personnel: 1,
     techStack: ["Next.js", "TypeScript", "Emotion"],
