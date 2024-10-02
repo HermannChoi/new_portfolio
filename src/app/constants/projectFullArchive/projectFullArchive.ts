@@ -5,14 +5,20 @@ export const projectFullArchive: ProjectFullArchive[] = [
     year: 2024,
     name: "Take Medicine",
     personnel: 1,
-    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand"],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Emotion",
+      "Zustand",
+      "Github Actions",
+    ],
     link: "https://take-medicine.vercel.app/",
   },
   {
     year: 2024,
     name: "My Portfolio v2.0",
     personnel: 1,
-    techStack: ["Next.js", "TypeScript", "Emotion", "Recoil"],
+    techStack: ["Next.js", "TypeScript", "Emotion", "Recoil", "Github Actions"],
     link: "https://yunseokchoi.vercel.app/",
   },
 
@@ -20,7 +26,7 @@ export const projectFullArchive: ProjectFullArchive[] = [
     year: 2024,
     name: "My Portfolio",
     personnel: 1,
-    techStack: ["Next.js", "TypeScript", "Emotion"],
+    techStack: ["Next.js", "TypeScript", "Emotion", "Github Actions"],
     link: "https://my-portfolio-snowy-tau.vercel.app/",
   },
   {

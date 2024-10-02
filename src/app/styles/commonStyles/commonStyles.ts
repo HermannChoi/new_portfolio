@@ -4,7 +4,7 @@ import { showUp2 } from "./keyframes";
 export const mediaWidths = {
   header: 550,
   first: 900,
-  second: 1000,
+  second: 1100,
   third: 750,
   fourth: 720,
   fifth: 960,
