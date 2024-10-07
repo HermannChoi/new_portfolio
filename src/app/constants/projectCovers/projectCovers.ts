@@ -1,10 +1,29 @@
 import { ProjectCover } from "@/app/types/projectComponentTypes/projectCover";
+import image0 from "@/app/assets/projectImages/takemedicineImg.png";
 import image1 from "@/app/assets/projectImages/myportfolioImg.png";
 import image2 from "@/app/assets/projectImages/paletteImg.png";
 import image3 from "@/app/assets/projectImages/earthidenImg.png";
 import image4 from "@/app/assets/projectImages/githubfinderImg.png";
 
 export const projectCovers: ProjectCover[] = [
+  {
+    src: image0,
+    href: `https://take-medicine.vercel.app/`,
+    title: "Take Medicine",
+    period: "2024.09.10 ~ 2024.10.02 (23D)",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Emotion",
+      "Zustand",
+      "Github Actions",
+    ],
+    state: ["deployed"],
+    descriptionEng:
+      "I have implemented a service to prevent confusion about whether I have taken my medication today. The service allows you to store medications based on time slots and activate them with a toggle button, which records the date and time. Additionally, you can set the intake cycle so that once the day has passed, the medication status automatically deactivates.",
+    descriptionKor:
+      "오늘 먹을 약을 먹었나 헷갈리는 것을 방지하기 위해 만든 서비스입니다. 시간대에 맞춰 약을 저장하고 토글버튼으로 활성화를 할 수 있고 이때 날짜와 시간이 저장됩니다. 또한 먹는 주기를 설정해서 그 날이 지나면 자동으로 약의 복용여부가 비활성화 되게 구현하였습니다.",
+  },
   {
     src: image1,
     href: `https://my-portfolio-snowy-tau.vercel.app/`,
