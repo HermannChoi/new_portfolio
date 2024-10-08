@@ -1,5 +1,5 @@
 import { ProjectCover } from "@/app/types/projectComponentTypes/projectCover";
-import image0 from "@/app/assets/projectImages/takemedicineImg.png";
+import image0 from "@/app/assets/projectImages/pillmeImg.png";
 import image1 from "@/app/assets/projectImages/myportfolioImg.png";
 import image2 from "@/app/assets/projectImages/paletteImg.png";
 import image3 from "@/app/assets/projectImages/earthidenImg.png";
@@ -8,16 +8,10 @@ import image4 from "@/app/assets/projectImages/githubfinderImg.png";
 export const projectCovers: ProjectCover[] = [
   {
     src: image0,
-    href: `https://take-medicine.vercel.app/`,
-    title: "Take Medicine",
-    period: "2024.09.10 ~ 2024.10.02 (23D)",
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Emotion",
-      "Zustand",
-      "Github Actions",
-    ],
+    href: `https://pillme-original.vercel.app/`,
+    title: "Pillme",
+    period: "2024.09.10 ~ ",
+    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand"],
     state: ["deployed"],
     descriptionEng:
       "I have implemented a service to prevent confusion about whether I have taken my medication today. The service allows you to store medications based on time slots and activate them with a toggle button, which records the date and time. Additionally, you can set the intake cycle so that once the day has passed, the medication status automatically deactivates.",

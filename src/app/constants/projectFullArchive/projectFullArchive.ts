@@ -3,16 +3,10 @@ import { ProjectFullArchive } from "@/app/types/projectComponentTypes/projectFul
 export const projectFullArchive: ProjectFullArchive[] = [
   {
     year: 2024,
-    name: "Take Medicine",
+    name: "Pillme",
     personnel: 1,
-    techStack: [
-      "Next.js",
-      "TypeScript",
-      "Emotion",
-      "Zustand",
-      "Github Actions",
-    ],
-    link: "https://take-medicine.vercel.app/",
+    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand"],
+    link: "https://pillme-original.vercel.app/",
   },
   {
     year: 2024,
