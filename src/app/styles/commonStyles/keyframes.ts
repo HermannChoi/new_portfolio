@@ -82,12 +82,6 @@ export const emojiAni = keyframes`
 100% {transform: scale(1)}
 `;
 
-export const profileBtnAni = keyframes`
-0%{box-shadow: 0 0 0px #fff;}
-50%{box-shadow: 0 0 50px #fff;}
-100%{box-shadow: 0 0 0px #fff;}
-`;
-
 export const gettingBiggerAni = keyframes`
 from { transform: translate(-50%, -50%) scale(1); opacity: 1;}
 to { transform: translate(-50%, -50%) scale(1.5); opacity: 0;}

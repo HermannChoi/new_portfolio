@@ -3,11 +3,11 @@ import { showUp2 } from "./keyframes";
 
 export const mediaWidths = {
   header: 550,
-  first: 900,
+  first: 1100,
   second: 1100,
   third: 750,
   fourth: 720,
-  fifth: 960,
+  fifth: 1300,
 };
 
 export const commonColors = {
@@ -80,8 +80,7 @@ export const delayShowUpAni = (delay: number) => {
 
 export const sectionTitleStyle = [
   css`
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    text-align: center;
   `,
 ];

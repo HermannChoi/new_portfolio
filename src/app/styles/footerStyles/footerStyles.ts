@@ -12,18 +12,13 @@ export const footerStyles = {
     css`
       row-gap: 30px;
       width: 100%;
-      height: 100vh;
-      background-color: ${commonColors.rep};
+      height: 80vh;
     `,
   ],
   thankYou: [
     css`
-      font-size: 7rem;
+      font-size: 4rem;
       text-align: center;
-
-      @media (max-width: ${mediaWidths.fourth}px) {
-        font-size: 4rem;
-      }
     `,
   ],
   contactCopyBtn: [

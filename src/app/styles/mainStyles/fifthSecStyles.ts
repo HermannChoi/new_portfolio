@@ -12,7 +12,7 @@ export const fifthSectionStyles = {
       css`
         position: relative;
         min-width: 200px;
-        width: 40vw;
+        width: 100%;
         height: 40px;
         padding: 5px 10px;
         border: 1px solid ${commonColors.rep}90;
@@ -72,7 +72,7 @@ export const fifthSectionStyles = {
   thead: [
     css`
       position: sticky;
-      top: 80px;
+      top: 0;
       backdrop-filter: blur(10px);
     `,
   ],
@@ -117,14 +117,10 @@ export const fifthSectionStyles = {
   ],
   tdLink: [
     css`
-      max-width: 300px;
+      max-width: 12vw;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-
-      @media (max-width: ${mediaWidths.fifth}px) {
-        max-width: 40vw;
-      }
     `,
   ],
   link: [

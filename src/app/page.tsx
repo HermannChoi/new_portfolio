@@ -31,11 +31,13 @@ export default function Home() {
       <Header />
       <main css={mainStyles.main}>
         <FirstSection />
-        <SecondSection />
-        <ThirdSection />
-        <FourthSection />
+        <div css={mainStyles.infoPart}>
+          <ThirdSection />
+          <SecondSection />
+          <FourthSection />
+          <Footer />
+        </div>
       </main>
-      <Footer />
     </>
   );
 }

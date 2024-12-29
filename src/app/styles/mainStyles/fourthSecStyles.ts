@@ -2,20 +2,13 @@ import { css } from "@emotion/react";
 import {
   commonColors,
   flexCenterX2,
-  flexColumnCenter,
   mediaWidths,
 } from "../commonStyles/commonStyles";
 
 export const fourthSectionStyles = {
   outline: [
-    flexColumnCenter,
     css`
-      row-gap: 30px;
-      padding: 0 10vw;
-
-      @media (max-width: ${mediaWidths.fourth + 500}px) {
-        padding: 0;
-      }
+      row-gap: 50px;
     `,
   ],
   layout: [

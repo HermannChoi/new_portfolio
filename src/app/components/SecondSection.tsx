@@ -17,7 +17,7 @@ const SecondSection = () => {
             return (
               <div
                 key={i}
-                className="fade-wrap"
+                // className="fade-wrap"
                 css={secondSectionStyles.innerContainer}
               >
                 <p css={secondSectionStyles.techTitle}>{tech.title}</p>

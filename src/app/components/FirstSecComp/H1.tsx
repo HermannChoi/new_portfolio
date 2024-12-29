@@ -13,13 +13,22 @@ const H1 = () => {
     <h1 css={firstSectionStyles.h1}>
       {isEnglish ? (
         <>
-          Hello, this is the <span css={colorRep}>detail-oriented</span>{" "}
-          frontend developer, <span css={colorRep}>Yunseok Choi</span>
+          <p>
+            Hello, this is the <span css={colorRep}>detail-oriented</span>
+          </p>
+          <p>
+            frontend developer, <span css={colorRep}>Yunseok Choi</span>
+          </p>
         </>
       ) : (
         <>
-          안녕하세요, <span css={colorRep}>디테일 바라기</span> 프론트엔드
-          개발자, <span css={colorRep}>최윤석</span>입니다.
+          <p>
+            안녕하세요, <span css={colorRep}>디테일 바라기</span>
+          </p>
+          <p>프론트엔드 개발자,</p>
+          <p>
+            <span css={colorRep}>최윤석</span>입니다.
+          </p>
         </>
       )}
     </h1>

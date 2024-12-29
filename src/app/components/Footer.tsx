@@ -15,25 +15,12 @@ const Footer = () => {
 
   return (
     <footer css={footerStyles.layout}>
-      <p className="fade-wrap2" css={footerStyles.thankYou}>
+      <p
+        // className="fade-wrap2"
+        css={footerStyles.thankYou}
+      >
         {isEnglish ? `Thank you for reading` : `감사합니다.`}
       </p>
-      <button
-        className="fade-wrap2"
-        onClick={() => clickCopyBtn(isEnglish)}
-        css={footerStyles.contactCopyBtn}
-      >
-        <Image src={copy} alt="copy" loading="lazy" width={25} height={25} />
-        <p css={footerStyles.contactTitle}>Contact : </p>
-        <p css={footerStyles.email}>{myEmail}</p>
-      </button>
-      <button
-        className="fade-wrap2"
-        onClick={() => scrollToTop(0)}
-        css={footerStyles.backToTopBtn}
-      >
-        Back to Top
-      </button>
     </footer>
   );
 };

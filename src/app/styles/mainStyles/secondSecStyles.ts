@@ -8,13 +8,13 @@ import {
 
 export const secondSectionStyles = {
   layout: [
-    flexColumnCenter,
     css`
+      display: flex;
+      flex-direction: column;
       width: 100%;
     `,
   ],
   main: [
-    flexColumnCenter,
     css`
       width: 100%;
       @media (max-width: ${mediaWidths.second}px) {
@@ -26,7 +26,7 @@ export const secondSectionStyles = {
     css`
       display: flex;
       flex-direction: column;
-      width: fit-content;
+      width: 100%;
       transition: 0.2s;
 
       @media (max-width: ${mediaWidths.second}px) {
@@ -38,10 +38,12 @@ export const secondSectionStyles = {
   innerContainer: [
     css`
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      // align-items: center;
       width: 100%;
-      min-height: 60px;
-      padding: 5px 20px;
+      // min-height: 60px;
+      padding: 5px 10px;
       border-radius: 0.5rem;
       transition: background-color 0.2s, transform 0.2s, left 1.5s, opacity 1.5s;
 
@@ -58,22 +60,14 @@ export const secondSectionStyles = {
   techTitle: [
     css`
       min-width: 200px;
-      font-size: 2.5rem;
-
-      @media (max-width: ${mediaWidths.second}px) {
-        text-align: center;
-      }
+      font-size: 2rem;
     `,
   ],
   techContentLayout: [
     css`
       display: flex;
-      gap: 20px;
-
-      @media (max-width: ${mediaWidths.second}px) {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+      flex-wrap: wrap;
+      gap: 5px;
     `,
   ],
   techContentContainer: [
@@ -81,7 +75,7 @@ export const secondSectionStyles = {
     css`
       gap: 10px;
       min-width: fit-content;
-      padding: 5px 20px;
+      padding: 5px 15px;
       border-radius: 10px;
       background-color: ${commonColors.rep}50;
       font-size: 2rem;
@@ -104,7 +98,8 @@ export const secondSectionStyles = {
   ],
   techContent: [
     css`
-      font-size: 2rem;
+      font-size: 1.2rem;
+      font-family: none;
     `,
   ],
 };
