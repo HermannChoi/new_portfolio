@@ -5,7 +5,7 @@ export const projectFullArchive: ProjectFullArchive[] = [
     year: 2024,
     name: "Pillme",
     personnel: 1,
-    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand"],
+    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand", "PWA"],
     link: "https://pillme-original.vercel.app/",
   },
   {

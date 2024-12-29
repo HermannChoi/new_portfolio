@@ -11,7 +11,7 @@ export const projectCovers: ProjectCover[] = [
     href: `https://pillme-original.vercel.app/`,
     title: "Pillme",
     period: "2024.09.10 ~ ",
-    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand"],
+    techStack: ["Next.js", "TypeScript", "Emotion", "Zustand", "PWA"],
     state: ["deployed"],
     descriptionEng:
       "I have implemented a service to prevent confusion about whether I have taken my medication today. The service allows you to store medications based on time slots and activate them with a toggle button, which records the date and time. Additionally, you can set the intake cycle so that once the day has passed, the medication status automatically deactivates.",
