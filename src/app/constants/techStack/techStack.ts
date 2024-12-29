@@ -7,6 +7,14 @@ export const techStacks = [
         name: "JavaScript",
         link: `https://developer.mozilla.org/ko/docs/Web/JavaScript`,
       },
+      {
+        name: "HTML",
+        link: `https://developer.mozilla.org/ko/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax`,
+      },
+      {
+        name: "CSS",
+        link: `https://developer.mozilla.org/ko/docs/Web/CSS`,
+      },
     ],
   },
   {
@@ -21,11 +29,6 @@ export const techStacks = [
         name: "React-native",
         link: `https://reactnative.dev/`,
       },
-    ],
-  },
-  {
-    title: "Style",
-    contents: [
       { name: "Emotion", link: `https://emotion.sh/docs/introduction` },
       {
         name: "SCSS",
@@ -39,11 +42,6 @@ export const techStacks = [
         name: "Tailwind",
         link: `https://tailwindcss.com/`,
       },
-    ],
-  },
-  {
-    title: "State Mgmt.",
-    contents: [
       { name: "Zustand", link: `https://zustand-demo.pmnd.rs/` },
       {
         name: "React-query",
@@ -56,6 +54,10 @@ export const techStacks = [
       {
         name: "Redux",
         link: `https://ko.redux.js.org/introduction/getting-started/`,
+      },
+      {
+        name: "Framer-motion",
+        link: `https://motion.dev/`,
       },
     ],
   },
@@ -73,6 +75,10 @@ export const techStacks = [
       },
       {
         name: "Slack",
+        link: `https://slack.com/`,
+      },
+      {
+        name: "Vercel",
         link: `https://slack.com/`,
       },
     ],

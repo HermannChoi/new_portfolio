@@ -12,7 +12,7 @@ export const footerStyles = {
     css`
       row-gap: 30px;
       width: 100%;
-      height: 80vh;
+      height: calc(100vh - 130px);
     `,
   ],
   thankYou: [

@@ -43,10 +43,10 @@ export const firstSectionStyles = {
   right: [
     css`
       position: relative;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      height: 200px;
     `,
   ],
   flip: [
@@ -62,7 +62,7 @@ export const firstSectionStyles = {
         height: 100%;
         position: relative;
         border: 1px solid #ffffff;
-        border-radius: 20px;
+        border-radius: 20px 0 0 20px;
         transition: 1.5s;
         transform-style: preserve-3d;
         transform: rotateY(${isClicked ? 360 * 3 : 0}deg);
@@ -75,7 +75,7 @@ export const firstSectionStyles = {
         position: absolute;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        border-radius: 20px 0 0 20px;
         object-fit: cover;
         user-select: none;
         ${!isClicked && `filter: blur(10px); opacity: 0.5;`}
@@ -89,12 +89,13 @@ export const firstSectionStyles = {
         width: 100%;
         height: 100%;
         border: none;
-        border-radius: 20px;
+        border-radius: 0 20px 20px 0;
         background-color: transparent;
         transition: 0.2s;
         overflow: hidden;
+
         &:hover {
-          box-shadow: 0 0 50px #fff;
+          box-shadow: 0 0 30px #fff;
         }
         ${!isClicked &&
         `filter: blur(5px); opacity: 0.5; &:hover { opacity: 0.8;}`}
@@ -167,8 +168,8 @@ export const personalLinks = {
     css`
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
-      gap: 10px;
+      justify-content: space-between;
+      height: 100%;
     `,
   ],
   layout: (color?: string) => {
@@ -181,12 +182,12 @@ export const personalLinks = {
         height: 40px;
         padding: 10px;
         border: 1px solid white;
-        border-radius: 5px;
+        border-radius: 0 10px 10px 0;
         background-color: transparent;
         transition: all 0.2s;
+
         &:hover {
           width: 170px;
-          border-radius: 10px;
           border-color: ${commonColors.rep};
           background-color: ${color}80;
         }

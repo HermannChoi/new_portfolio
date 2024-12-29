@@ -18,7 +18,7 @@ export const mainStyles = {
     css`
       display: flex;
       flex-direction: column;
-      row-gap: 50px;
+      row-gap: 8rem;
       width: 100%;
       padding: 50px;
 
