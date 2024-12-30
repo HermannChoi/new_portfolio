@@ -4,6 +4,7 @@ export interface ProjectCover {
   src?: StaticImageData;
   href: string;
   github?: string;
+  velog?: string;
   title: string;
   period: string;
   techStack: string[];

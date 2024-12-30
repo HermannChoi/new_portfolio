@@ -50,8 +50,8 @@ export const firstSectionStyles = {
   ],
   flip: [
     css`
-      min-width: 200px;
-      max-width: 200px;
+      width: 40%;
+      min-width: 160px;
       height: 200px;
     `,
   ],
@@ -179,7 +179,8 @@ export const personalLinks = {
         display: flex;
         align-items: center;
         gap: 10px;
-        width: 80%;
+        width: 90%;
+        min-width: 10rem;
         height: 40px;
         padding: 10px;
         border: 1px solid white;
@@ -188,7 +189,7 @@ export const personalLinks = {
         transition: all 0.2s;
 
         &:hover {
-          width: 90%;
+          width: 100%;
           border-color: ${commonColors.rep};
           background-color: ${color}80;
         }

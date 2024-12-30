@@ -29,6 +29,10 @@ export const projectPageStyles = {
       row-gap: 3rem;
       width: 100%;
       padding: 1vw 20vw 5vw;
+
+      @media (max-width: 500px) {
+        padding: 1vw 5vw 5vw;
+      }
     `,
   ],
   firstInfoLayout: [
@@ -55,6 +59,14 @@ export const projectPageStyles = {
     css`
       font-size: 1rem;
       font-family: none;
+    `,
+  ],
+  stackContainer: [
+    css`
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      row-gap: 10px;
     `,
   ],
   description: [

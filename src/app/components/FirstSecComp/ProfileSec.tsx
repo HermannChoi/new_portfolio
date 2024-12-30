@@ -17,7 +17,7 @@ const ProfileSec = () => {
   }, []);
 
   return (
-    <div css={[firstSectionStyles.flip, delayShowUpAni(2)]}>
+    <div css={[firstSectionStyles.flip, delayShowUpAni(0.5)]}>
       <div css={firstSectionStyles.card(isClicked)}>
         <Image
           src={profile}

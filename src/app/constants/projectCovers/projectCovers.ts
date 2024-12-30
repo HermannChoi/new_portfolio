@@ -34,6 +34,8 @@ export const projectCovers: ProjectCover[] = [
     src: image2,
     href: `/palette*`,
     github: "https://github.com/Happiness-Meta/final-front",
+    velog:
+      "https://velog.io/@hiyunseok347/series/Palette-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8",
     title: "Palette*",
     period: "2024.03.04 ~ 2024.04.22 (49D)",
     techStack: [

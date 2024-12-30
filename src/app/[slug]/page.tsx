@@ -33,7 +33,7 @@ const ProjectPage = () => {
           <div css={projectPageStyles.left}>
             <p css={projectPageStyles.title}>{project.title}</p>
             <p css={projectPageStyles.date}>{project.period}</p>
-            <div css={fourthSectionStyles.stackContainer}>
+            <div css={projectPageStyles.stackContainer}>
               {project.techStack.map((tech) => {
                 return (
                   <p key={tech} css={fourthSectionStyles.stack}>
@@ -56,6 +56,22 @@ const ProjectPage = () => {
                   ]}
                 >
                   {project.github}
+                </Link>
+              )}
+            </p>
+            <p>
+              Velog :{" "}
+              {project.velog !== undefined && (
+                <Link
+                  href={project.velog}
+                  css={[
+                    css`
+                      font-family: none;
+                      text-decoration: underline;
+                    `,
+                  ]}
+                >
+                  {project.velog}
                 </Link>
               )}
             </p>
