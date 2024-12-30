@@ -12,7 +12,7 @@ import { fourthSectionStyles } from "../styles/mainStyles/fourthSecStyles";
 import Link from "next/link";
 import { css } from "@emotion/react";
 
-const page = () => {
+const ProjectPage = () => {
   const router = useRouter();
 
   const project = useRecoilValue(projectAtom);
@@ -98,4 +98,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProjectPage;
