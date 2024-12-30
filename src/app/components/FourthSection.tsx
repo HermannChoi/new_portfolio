@@ -9,9 +9,18 @@ import Link from "next/link";
 import FifthSection from "./FifthSection";
 import Left from "./FourthSecComp/Left";
 import Right from "./FourthSecComp/Right";
+import { projectAtom } from "../atoms/projectAtoms";
+import { useRecoilState } from "recoil";
+import { ProjectCover } from "../types/projectComponentTypes/projectCover";
 
 const FourthSection = () => {
   const [whichHovered, setWhichHovered] = useState<number | null>(null);
+
+  const [, setClickedProject] = useRecoilState(projectAtom);
+
+  const handleClickProject = (project: ProjectCover) => {
+    setClickedProject(project);
+  };
 
   return (
     <div css={fourthSectionStyles.outline}>
@@ -20,10 +29,10 @@ const FourthSection = () => {
         return (
           <Link
             key={i}
-            // className="fade-wrap"
             href={projCov.href}
             onMouseEnter={() => setWhichHovered(i)}
             onMouseLeave={() => setWhichHovered(null)}
+            onClick={() => handleClickProject(projCov)}
             css={fourthSectionStyles.layout}
           >
             <Left projCov={projCov} />

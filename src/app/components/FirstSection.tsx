@@ -18,8 +18,10 @@ const FirstSection = () => {
     <section css={firstSectionStyles.layout}>
       <div css={firstSectionStyles.left}>
         <div css={FSmessageStyles.layout}>
-          <div css={FSmessageStyles.emoji}>✌️</div>
-          <p css={FSmessageStyles.message}>Open to work</p>
+          <div css={FSmessageStyles.emoji}>🔔</div>
+          <p css={FSmessageStyles.message}>
+            {isEnglish ? `Open to work` : `구직중`}
+          </p>
         </div>
       </div>
       <H1 />

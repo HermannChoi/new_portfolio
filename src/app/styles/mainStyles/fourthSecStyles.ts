@@ -8,7 +8,9 @@ import {
 export const fourthSectionStyles = {
   outline: [
     css`
-      row-gap: 50px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
     `,
   ],
   layout: [

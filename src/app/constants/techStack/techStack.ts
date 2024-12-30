@@ -18,7 +18,7 @@ export const techStacks = [
     ],
   },
   {
-    title: "FWK & Lib.",
+    title: "Framework & Libraries",
     contents: [
       {
         name: "Next.js",
@@ -62,7 +62,7 @@ export const techStacks = [
     ],
   },
   {
-    title: "ETC",
+    title: "ETC.",
     contents: [
       { name: "Github", link: `https://github.com/` },
       {
@@ -79,7 +79,7 @@ export const techStacks = [
       },
       {
         name: "Vercel",
-        link: `https://slack.com/`,
+        link: `https://vercel.com/`,
       },
     ],
   },

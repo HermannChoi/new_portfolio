@@ -10,7 +10,7 @@ export const mainStyles = {
 
       @media (max-width: ${mediaWidths.first}px) {
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 8rem;
       }
     `,
   ],

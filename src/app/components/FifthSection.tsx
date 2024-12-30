@@ -13,7 +13,7 @@ import { fourthSectionStyles } from "../styles/mainStyles/fourthSecStyles";
 import Link from "next/link";
 
 const FifthSection = () => {
-  const [isClicked, setIsClicked] = useState<boolean>(false);
+  const [isClicked, setIsClicked] = useState<boolean>(true);
   const [isSmaller, setIsSmaller] = useState<boolean>(false);
 
   let thData = isSmaller

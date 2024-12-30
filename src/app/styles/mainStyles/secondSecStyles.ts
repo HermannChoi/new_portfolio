@@ -26,6 +26,7 @@ export const secondSectionStyles = {
     css`
       display: flex;
       flex-direction: column;
+      row-gap: 10px;
       width: 100%;
       transition: 0.2s;
 
@@ -68,6 +69,7 @@ export const secondSectionStyles = {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
+      padding: 5px;
     `,
   ],
   techContentContainer: [

@@ -15,7 +15,7 @@ export const firstSectionStyles = {
       left: 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 30px;
       width: 40%;
       min-width: 40%;
       height: fit-content;
@@ -43,15 +43,15 @@ export const firstSectionStyles = {
   right: [
     css`
       position: relative;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
       gap: 10px;
       height: 200px;
     `,
   ],
   flip: [
     css`
-      width: 200px;
+      min-width: 200px;
+      max-width: 200px;
       height: 200px;
     `,
   ],
@@ -169,6 +169,7 @@ export const personalLinks = {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      width: 100%;
       height: 100%;
     `,
   ],
@@ -178,7 +179,7 @@ export const personalLinks = {
         display: flex;
         align-items: center;
         gap: 10px;
-        width: 150px;
+        width: 80%;
         height: 40px;
         padding: 10px;
         border: 1px solid white;
@@ -187,7 +188,7 @@ export const personalLinks = {
         transition: all 0.2s;
 
         &:hover {
-          width: 170px;
+          width: 90%;
           border-color: ${commonColors.rep};
           background-color: ${color}80;
         }

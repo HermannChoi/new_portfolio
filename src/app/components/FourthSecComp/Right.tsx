@@ -37,11 +37,6 @@ const Right: React.FC<RightProps> = ({ projCov, whichHovered, i }) => {
           />
         </svg>
       </p>
-      <p css={fourthSectionStyles.description}>
-        {isEnglish ? projCov.descriptionEng : projCov.descriptionKor}
-      </p>
-      <p css={fourthSectionStyles.date}>{projCov.period}</p>
-
       <div css={fourthSectionStyles.stackContainer}>
         {projCov.techStack.map((stack, i) => {
           return (
@@ -51,6 +46,10 @@ const Right: React.FC<RightProps> = ({ projCov, whichHovered, i }) => {
           );
         })}
       </div>
+      <p css={fourthSectionStyles.description}>
+        {isEnglish ? projCov.descriptionEng : projCov.descriptionKor}
+      </p>
+      <p css={fourthSectionStyles.date}>{projCov.period}</p>
     </div>
   );
 };

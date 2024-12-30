@@ -15,7 +15,7 @@ const Left: React.FC<LeftProps> = ({ projCov }) => {
     <div css={fourthSectionStyles.left}>
       <figure css={fourthSectionStyles.imageContainer}>
         <Image
-          src={projCov.src}
+          src={projCov.src!}
           alt={projCov.title}
           loading="lazy"
           placeholder={"empty"}
